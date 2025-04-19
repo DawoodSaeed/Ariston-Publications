@@ -1,5 +1,6 @@
 
 import { useState } from "react";
+import { Card, CardContent } from "@/components/ui/card";
 
 interface BookCardProps {
   title: string;
@@ -12,32 +13,36 @@ const BookCard = ({ title, author, image, description }: BookCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div 
-      className="relative bg-white rounded-xl shadow-lg overflow-hidden group cursor-pointer"
+    <Card 
+      className="relative bg-white overflow-hidden group cursor-pointer transition-all duration-300"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="aspect-[3/4] relative overflow-hidden">
-        <img
-          src={image}
-          alt={title}
-          className={`w-full h-full object-cover transition-transform duration-300 ${
-            isHovered ? 'scale-95' : 'scale-100'
-          }`}
-        />
-        {isHovered && description && (
-          <div className="absolute inset-0 bg-black/70 p-4 flex items-center justify-center animate-fade-in">
-            <p className="text-white text-sm">
+      <CardContent className="p-0">
+        <div className="aspect-[4/3] relative overflow-hidden">
+          <img
+            src={image}
+            alt={title}
+            className={`w-full h-full object-cover transition-transform duration-300 ${
+              isHovered ? 'scale-95' : 'scale-100'
+            }`}
+          />
+        </div>
+        <div className="p-4 space-y-2">
+          <h3 className={`font-semibold text-lg transition-transform duration-300 ${
+            isHovered ? '-translate-y-2' : 'translate-y-0'
+          }`}>
+            {title}
+          </h3>
+          {isHovered && description && (
+            <p className="text-sm text-gray-600 animate-fade-in">
               {description}
             </p>
-          </div>
-        )}
-      </div>
-      <div className={`p-4 transition-transform duration-300 ${isHovered ? '-translate-y-2' : 'translate-y-0'}`}>
-        <h3 className="font-semibold text-lg line-clamp-2">{title}</h3>
-        <p className="text-gray-600 mt-1">Authors: {author}</p>
-      </div>
-    </div>
+          )}
+          <p className="text-gray-600 text-sm">Authors: {author}</p>
+        </div>
+      </CardContent>
+    </Card>
   );
 };
 
