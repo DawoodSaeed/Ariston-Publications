@@ -29,28 +29,38 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="container mx-auto py-16 px-4">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
+      <section className="relative h-[600px] flex items-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/lovable-uploads/5135a55e-24ba-4a4c-aca5-7df4a0e6b718.png"
+            alt="Hero Background"
+            className="w-full h-full object-cover opacity-10"
+          />
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-2xl">
             <div className="flex items-center gap-2 text-sm mb-4">
               <span>Home</span>
               <ChevronDown className="h-4 w-4" />
               <span>Books</span>
             </div>
-            <h1 className="text-5xl font-bold text-[#1a1b4b] mb-6">Our Books</h1>
-            <p className="text-gray-600 mb-8">
-              Discover a diverse collection of books that inspire, educate, and empower. Whether you're looking for academic research, insightful literature, or engaging reads, our collection offers something for everyone.
+            <h1 className="text-5xl font-bold text-[#1a1b4b] mb-6">
+              Publish With Us <br />
+              Your Research Work
+            </h1>
+            <p className="text-gray-600 mb-8 text-lg">
+              Discover a diverse collection of books that inspire, educate, and empower. 
+              Whether you're looking for academic research, insightful literature, or engaging reads, 
+              our collection offers something for everyone.
             </p>
-            <Button className="bg-blue-800 hover:bg-blue-700">
-              Explore Books
-            </Button>
-          </div>
-          <div className="hidden md:block">
-            <img 
-              src="/public/lovable-uploads/5135a55e-24ba-4a4c-aca5-7df4a0e6b718.png" 
-              alt="Library" 
-              className="w-full rounded-lg shadow-lg"
-            />
+            <div className="flex gap-4">
+              <Button className="bg-blue-800 hover:bg-blue-700">
+                Explore Books
+              </Button>
+              <Button variant="outline">
+                Submit Manuscript
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -58,7 +68,12 @@ const Home = () => {
       {/* Popular Books Section */}
       <section className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-[#1a1b4b] mb-12">Our Popular Books</h2>
+          <div className="flex justify-between items-center mb-12">
+            <h2 className="text-4xl font-bold text-[#1a1b4b]">Our Popular Books</h2>
+            <Button variant="outline" className="gap-2">
+              View All Books <ArrowRight className="h-4 w-4" />
+            </Button>
+          </div>
           <div className="grid md:grid-cols-3 gap-8">
             {popularBooks.map((book) => (
               <BookCard key={book.title} {...book} />
