@@ -29,13 +29,22 @@ const MainRoutes = () => {
       {/* Admin routes */}
       <Route path="/admin" element={<AdminLayout />}>
         <Route index element={<AdminDashboard />} />
-        {/* Add more admin routes as needed */}
+        <Route path="books" element={<AdminDashboard />} />
+        <Route path="users" element={<AdminDashboard />} />
       </Route>
 
-      {/* User routes */}
-      <Route path="/user" element={<UserLayout />}>
+      {/* Author routes */}
+      <Route path="/author" element={<UserLayout />}>
         <Route index element={<UserDashboard />} />
-        {/* Add more user routes as needed */}
+        <Route path="submissions" element={<UserDashboard />} />
+        <Route path="profile" element={<UserDashboard />} />
+      </Route>
+
+      {/* Reviewer routes */}
+      <Route path="/reviewer" element={<UserLayout />}>
+        <Route index element={<UserDashboard />} />
+        <Route path="reviews" element={<UserDashboard />} />
+        <Route path="profile" element={<UserDashboard />} />
       </Route>
 
       {/* 404 route */}

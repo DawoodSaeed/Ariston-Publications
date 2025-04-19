@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { ShoppingCart, Search } from "lucide-react";
+import { ShoppingCart, Search, LogIn } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
@@ -30,6 +30,12 @@ const Navbar = () => {
               0
             </span>
           </Button>
+          <Link to="/login">
+            <Button variant="outline" className="flex items-center gap-2">
+              <LogIn className="h-4 w-4" />
+              Login
+            </Button>
+          </Link>
           <Button variant="default" className="bg-blue-800 hover:bg-blue-700">
             Contact Us
           </Button>

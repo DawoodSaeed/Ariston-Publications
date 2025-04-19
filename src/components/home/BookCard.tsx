@@ -26,14 +26,14 @@ const BookCard = ({ title, author, image, description }: BookCardProps) => {
           }`}
         />
         {isHovered && description && (
-          <div className="absolute inset-0 bg-black/70 p-4 flex items-center justify-center">
+          <div className="absolute inset-0 bg-black/70 p-4 flex items-center justify-center animate-fade-in">
             <p className="text-white text-sm">
               {description}
             </p>
           </div>
         )}
       </div>
-      <div className="p-4">
+      <div className={`p-4 transition-transform duration-300 ${isHovered ? '-translate-y-2' : 'translate-y-0'}`}>
         <h3 className="font-semibold text-lg line-clamp-2">{title}</h3>
         <p className="text-gray-600 mt-1">Authors: {author}</p>
       </div>
