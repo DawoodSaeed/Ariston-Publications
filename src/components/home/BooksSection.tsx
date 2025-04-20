@@ -46,7 +46,7 @@ const BooksSection = ({
 
   return (
     <section
-      className={`bg-[${background}] py-20 md:py-20`}
+      className={`bg-[${background}] pt-16 md:pt-24 relative`}
       style={{ height: "845px" }}
     >
       <div className="container mx-auto px-4 md:px-8 lg:px-16">
@@ -96,6 +96,12 @@ const BooksSection = ({
           </button>
         </div>
       </div>
+      {background != "white" && (
+        <img
+          src="/images/star.svg"
+          className="absolute top-[-40px] right-[4rem]"
+        />
+      )}
     </section>
   );
 };

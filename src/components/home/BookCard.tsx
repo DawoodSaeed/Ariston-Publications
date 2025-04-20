@@ -15,17 +15,22 @@ const BookCard = ({ title, author, image, description }: BookCardProps) => {
 
   return (
     <Card
-      className={`relative bg-[#F3F3F8] overflow-hidden group cursor-pointer transition-all duration-300 rounded-9xl p-6`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      style={{ width: "360px", borderRadius: "24px" }}
+      className={`relative bg-[#F3F3F8] overflow-hidden group cursor-pointer transition-all duration-300 rounded-9xl p-6`}
+      style={{
+        width: "360px",
+        borderRadius: "24px",
+        marginRight: "-10px",
+        height: "380px",
+      }}
     >
       <CardContent className="px-0">
         <div className="flex flex-col transition-all duration-300 ">
           {/* Image */}
           <div
             className={`transition-all duration-300 overflow-hidden ${
-              isHovered ? "h-[150px]" : "h-[200px]"
+              isHovered ? "h-[100px]" : "h-[200px]"
             }`}
           >
             <img
