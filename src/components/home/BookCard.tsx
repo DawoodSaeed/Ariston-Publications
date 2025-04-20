@@ -15,13 +15,13 @@ const BookCard = ({ title, author, image, description }: BookCardProps) => {
 
   return (
     <Card
-      className={`relative bg-white overflow-hidden group cursor-pointer transition-all duration-300`}
+      className={`relative bg-[#F3F3F8] overflow-hidden group cursor-pointer transition-all duration-300 rounded-9xl p-6`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      style={{ width: "360px" }}
+      style={{ width: "360px", borderRadius: "24px" }}
     >
-      <CardContent className="p-0">
-        <div className="flex flex-col transition-all duration-300">
+      <CardContent className="px-0">
+        <div className="flex flex-col transition-all duration-300 ">
           {/* Image */}
           <div
             className={`transition-all duration-300 overflow-hidden ${
@@ -37,8 +37,30 @@ const BookCard = ({ title, author, image, description }: BookCardProps) => {
 
           {/* Title and Author */}
           <div className="p-4">
-            <h3 className="font-semibold text-lg line-clamp-2">{title}</h3>
-            <p className="text-gray-600 text-sm">By {author}</p>
+            <h3 className="font-bold text-19px line-clamp-2 letter-spacing-0 text-capitalize text-[#0B0C58]">
+              {title}
+            </h3>
+
+            <hr
+              style={{
+                backgroundColor: "#03200E1A",
+                height: "1px",
+                marginTop: "10px",
+                marginBottom: "10px",
+              }}
+            />
+            <p
+              style={{
+                color: "#222222",
+                fontWeight: 500,
+                fontSize: "14px",
+                lineHeight: "20px",
+                letterSpacing: "0%",
+                verticalAlign: "middle",
+              }}
+            >
+              Author: {author}
+            </p>
 
             {/* Description and Button - appears smoothly on hover */}
             {description && (
