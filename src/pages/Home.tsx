@@ -3,6 +3,7 @@ import BooksSection from "@/components/home/BooksSection";
 import ValuePropositions from "@/components/home/ValuePropositions";
 import RecentArticles, { Article } from "@/components/home/RecentArticles";
 import NewsletterSubscribeCard from "@/components/home/Newsletter";
+import HeroSection from "@/components/home/HeroSection";
 
 const valuePropositionsData = {
   welcomeTitle: "Welcome To\nAriston Publications",
@@ -257,41 +258,12 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative pt-20 md:pt-24 min-h-[500px] flex items-center bg-[#F8F8F8]">
-        <div className="container mx-auto px-4 md:px-8 lg:px-16 relative z-10 flex flex-col md:flex-row items-center justify-center">
-          <div className="w-full md:w-1/2 mb-8 md:mb-0">
-            <h1 className="text-4xl md:text-5xl font-bold text-[#1a1b4b] mb-6">
-              Publish With Us <br />
-              Your Research Work
-            </h1>
-            <p className="text-gray-600 mb-8 text-lg">
-              Discover a diverse collection of books that inspire, educate, and
-              empower. Whether you're looking for academic research, insightful
-              literature, or engaging reads, our collection offers something for
-              everyone.
-            </p>
-            <div className="flex gap-4">
-              <Button className="bg-blue-800 hover:bg-blue-700">
-                Explore Books
-              </Button>
-              <Button variant="outline">Submit Manuscript</Button>
-            </div>
-          </div>
-          <div className="w-full md:w-1/2">
-            <img
-              src="/images/header_img.svg"
-              className="w-full md:w-auto md:ml-auto"
-              alt="Header Image"
-              style={{ height: "520px", width: "465px" }}
-            />
-          </div>
-        </div>
-        <img
-          src="/images/star.svg"
-          className="absolute bottom-[-40px] left-[4rem]"
-        />
-      </section>
-
+      <HeroSection
+        title="Publish With Us Your Research Work"
+        description="Discover a diverse collection of books that inspire, educate, and empower. Whether you're looking for academic research, insightful literature, or engaging reads, our collection offers something for everyone."
+        imageSrc="/images/header_img.svg"
+        exploreBtnTitle="Books"
+      />
       {/* Value Propositions Section */}
       <ValuePropositions
         welcomeTitle={valuePropositionsData.welcomeTitle}
