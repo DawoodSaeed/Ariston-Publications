@@ -1,16 +1,16 @@
 import React from "react";
 
-import service1 from "../assets/service1.svg";
-import service2 from "../assets/service2.svg";
-import service3 from "../assets/service3.svg";
-import service4 from "../assets/service4.svg";
+import service1 from "../assets/service1.png";
+import service2 from "../assets/service2.png";
+import service3 from "../assets/service3.png";
+import service4 from "../assets/service4.png";
 import community from "../assets/community.svg";
 import excellence from "../assets/exellence.svg";
 import inclusivity from "../assets/inclusivity.svg";
 import innovation from "../assets/innovation.svg";
 import collaboration from "../assets/collaboration.svg";
 import author from "../assets/author.svg";
-import servicesmain from "../assets/servicesmain.svg";
+import servicesmain from "../assets/servicesmain.png";
 
 const values = [
   {
