@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import ValueCard from "./ValueCard";
 import SectionBadge from "@/components/ui/section-badge";
+import EventCard from "./EventCard";
 
 interface ValueProposition {
   icon: ReactNode;
@@ -14,6 +15,7 @@ interface ValuePropositionsProps {
   onGetMore?: () => void;
   valuePropositions: ValueProposition[];
   sectionBadgeTitle?: string;
+  valueCard?: boolean;
 }
 
 const ValuePropositions = ({
@@ -22,9 +24,10 @@ const ValuePropositions = ({
   onGetMore,
   valuePropositions,
   sectionBadgeTitle = "ABOUT US",
+  valueCard = true,
 }: ValuePropositionsProps) => {
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="pt-16 md:pt-24 bg-white">
       <div className="container mx-auto px-4 md:px-8 lg:px-16">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
           {/* Left side - Welcome Text */}
@@ -52,7 +55,8 @@ const ValuePropositions = ({
                   key={prop.title}
                   className="border border-[#65656542] rounded-lg cursor-pointer transition-shadow duration-500 ease-in-out hover:shadow-lg"
                 >
-                  <ValueCard {...prop} />
+                  {valueCard && <ValueCard {...prop} />}
+                  {valueCard || <EventCard {...prop} />}
                 </div>
               ))}
             </div>

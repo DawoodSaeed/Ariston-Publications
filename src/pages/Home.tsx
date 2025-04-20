@@ -1,12 +1,8 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import BooksSection from "@/components/home/BooksSection";
 import ValuePropositions from "@/components/home/ValuePropositions";
+import RecentArticles, { Article } from "@/components/home/RecentArticles";
+import NewsletterSubscribeCard from "@/components/home/Newsletter";
 
 const valuePropositionsData = {
   welcomeTitle: "Welcome To\nAriston Publications",
@@ -29,6 +25,7 @@ Our publishing scope is dynamic and interdisciplinary, reflecting the evolving n
           alt="Computer"
         />
       ),
+
       title: "Inspiring Innovation:",
       description:
         "We champion pioneering ideas that shape the future of science, engineering, medicine, & technology.",
@@ -40,6 +37,7 @@ Our publishing scope is dynamic and interdisciplinary, reflecting the evolving n
           alt="Worldwide"
         />
       ),
+
       title: "Uniting Scholars:",
       description:
         "Collaboration is the cornerstone of progress. Ariston Publications facilitates meaningful exchanges between researchers and academics worldwide.",
@@ -54,6 +52,46 @@ Our publishing scope is dynamic and interdisciplinary, reflecting the evolving n
       title: "Fostering Interdisciplinary Collaboration:",
       description:
         "Ariston Publications bridges the gap between disciplines, encouraging the exchange of ideas and knowledge across fields.",
+    },
+  ],
+};
+
+const recentEventData = {
+  welcomeTitle: "Latest Events And News",
+  welcomeDescription: `Journals For scientists, engineers, and industry R&D personnel engaged in the development, engineering scale-up and next-generation education in academics.`,
+  valuePropositions: [
+    {
+      title:
+        "📢 Exciting News Alert! Ariston Publications Proudly Launches MatSci Express Journal! 🚀📚...",
+      date: "May 10, 2025",
+      description:
+        "A gathering of top innovators to showcase the latest in tech trends.",
+      icon: (
+        <img src="/images/home-section-valuepropotion/atom.svg" alt="Atom" />
+      ),
+      link: "#",
+    },
+    {
+      title:
+        "📢 Exciting News Alert! Ariston Publications Proudly Launches MatSci Express Journal! 🚀📚...",
+      date: "June 1, 2025",
+      description:
+        "An international event addressing global economic challenges.",
+      icon: (
+        <img src="/images/home-section-valuepropotion/atom.svg" alt="Atom" />
+      ),
+      link: "#",
+    },
+    {
+      title:
+        "📢 Exciting News Alert! Ariston Publications Proudly Launches MatSci Express Journal! 🚀📚...",
+      date: "July 18, 2025",
+      description:
+        "Discussions around ethical implications of AI advancements.",
+      icon: (
+        <img src="/images/home-section-valuepropotion/atom.svg" alt="Atom" />
+      ),
+      link: "#",
     },
   ],
 };
@@ -194,6 +232,27 @@ const journalBooks = [
   },
 ];
 
+const articles: Article[] = [
+  {
+    title:
+      "Gadolinium-Doped Carbon Quantum Dots for Dual and Multi-Modal Bioimaging: Synthesis Methods and Applications",
+    date: "April 2025",
+    imageUrl: "/images/recent-articles/article-thumbnail.png",
+  },
+  {
+    title:
+      "Investigating the Potential of Gd3+ doped LiBPO4 Phosphors in Improving White Lighting Applications: Synthesis..",
+    date: "April 2025",
+    imageUrl: "/images/recent-articles/article-thumbnail.png",
+  },
+  {
+    title:
+      "Advancements in Gadolinium-Doped Carbon Quantum Dots for Dual and Multi-Modal Bioimaging: Synthesis Methods and...",
+    date: "April 2025",
+    imageUrl: "/images/recent-articles/article-thumbnail.png",
+  },
+];
+
 const Home = () => {
   return (
     <div className="min-h-screen">
@@ -265,7 +324,7 @@ const Home = () => {
       />
 
       {/* FAQ Section */}
-      <section className="container mx-auto py-12 md:py-16 px-4 md:px-8 lg:px-16">
+      {/* <section className="container mx-auto py-12 md:py-16 px-4 md:px-8 lg:px-16">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl font-bold text-[#1a1b4b] mb-8">
             Frequently Asked Questions
@@ -318,31 +377,24 @@ const Home = () => {
             </AccordionItem>
           </Accordion>
         </div>
-      </section>
+      </section> */}
+      {/* Recent Articles Section */}
+      <RecentArticles heading="Recent Articles" articles={articles} />
+
+      <ValuePropositions
+        valueCard={false}
+        welcomeTitle={recentEventData.welcomeTitle}
+        welcomeDescription={recentEventData.welcomeDescription}
+        valuePropositions={recentEventData.valuePropositions}
+        sectionBadgeTitle="UPDATES"
+        onGetMore={() => {
+          // Handle get more click
+          console.log("Get More clicked");
+        }}
+      />
 
       {/* Newsletter Section */}
-      <section className="bg-[#1a1b4b] text-white py-12 md:py-16">
-        <div className="container mx-auto px-4 md:px-8 lg:px-16">
-          <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 rounded-xl bg-[#1a1b4b] p-8">
-            <div className="flex-1">
-              <h2 className="text-3xl font-bold mb-2">
-                Subscribe To Get Information,
-              </h2>
-              <h2 className="text-3xl font-bold mb-4">
-                Latest News And Other Interesting Events!
-              </h2>
-            </div>
-            <div className="flex w-full md:w-auto gap-4">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="flex-1 px-4 py-2 rounded-lg text-black"
-              />
-              <Button className="whitespace-nowrap">Subscribe</Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <NewsletterSubscribeCard />
     </div>
   );
 };
