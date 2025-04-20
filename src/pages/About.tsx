@@ -11,6 +11,12 @@ import work1 from "../assets/work1.svg";
 import work2 from "../assets/work2.svg";
 import work3 from "../assets/work3.svg";
 import work4 from "../assets/work4.svg";
+import community from "../assets/community.svg";
+import excellence from "../assets/exellence.svg";
+import inclusivity from "../assets/inclusivity.svg";
+import innovation from "../assets/innovation.svg";
+import collaboration from "../assets/collaboration.svg";
+import author from "../assets/author.svg";
 
 const workWeDo = [
   {
@@ -40,6 +46,83 @@ const workWeDo = [
     description:
       "Preserving and celebrating the stories, traditions, and knowledge systems of communities around the world.",
     image: work4,
+  },
+];
+
+const values = [
+  {
+    title: "Excellence",
+    description:
+      "Upholding the highest editorial quality, design, and production standards to create meticulously crafted, impactful publications.",
+    image: excellence,
+  },
+  {
+    title: "Inclusivity",
+    description:
+      "Embracing diverse perspectives and voices, fostering an inclusive literary and academic community.",
+    image: inclusivity,
+  },
+
+  {
+    title: "Innovation",
+    description:
+      "Encouraging creativity and experimentation, supporting works that push boundaries and redefine tradition.",
+    image: innovation,
+  },
+  {
+    title: "Collaboration",
+    description:
+      "Promoting interdisciplinary dialogue and partnerships, bridging gaps between researchers, institutions, and industries.",
+    image: collaboration,
+  },
+  {
+    title: "Community",
+    description:
+      "Building a vibrant, inclusive network of authors, readers, and scholars passionate about literature and scholarship.",
+    image: community,
+  },
+];
+
+const authors = [
+  {
+    name: "Cameron Williamson",
+    title: "Nanomaterials Scientist",
+    image: author,
+  },
+  {
+    name: "Jane Cooper",
+    title: "Theoretical Chemist",
+    image: author,
+  },
+  {
+    name: "Eleanor Pena",
+    title: "Nanomedicine Expert",
+    image: author,
+  },
+  {
+    name: "Brooklyn Simmons",
+    title: "Physical Chemist",
+    image: author,
+  },
+  {
+    name: "Albert Flores",
+    title: "Organic Chemist",
+    image: author,
+  },
+  {
+    name: "Devon Lane",
+    title: "Computational Chemist",
+    image: author,
+  },
+  {
+    name: "Annette Black",
+    title: "Nanomaterials Scientist",
+    image: author,
+  },
+  {
+    name: "Ronald Richards",
+    title: "Theoretical Chemist",
+    image: author,
   },
 ];
 
@@ -189,8 +272,93 @@ const About = () => {
               </div>
             </div>
           ))}
+          <div className="flex justify-end mt-20">
+            <img src="/images/star.svg" alt="star" className="h-20 w-20 " />
+          </div>
         </div>
       </section>
+
+      {/* Values Section */}
+
+      <section
+        className="flex flex-col items-center  py-20 "
+        style={{
+          background:
+            " linear-gradient(269.21deg, rgba(125, 127, 244, 0) 1.92%, rgba(3, 3, 208, 0.04) 26.97%, rgba(6, 6, 82, 0.05) 92.72%)",
+        }}
+      >
+        <span
+          className="text-xs uppercase font-semibold text-[#353535] mb-2 w-max p-2 rounded-full"
+          style={{
+            background:
+              "linear-gradient(269.21deg, rgba(125, 127, 244, 0.26) 1.92%, rgba(3, 3, 208, 0.14) 26.97%, rgba(6, 6, 82, 0.02) 92.72%)",
+          }}
+        >
+          Our Values
+        </span>
+        <p className="text-4xl font-extrabold text-[#0B0C58]">
+          The values that drive everything we do
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 w-3/4 ">
+          {values.slice(0, 3).map((item, index) => (
+            <div key={index} className="bg-white shadow rounded-2xl p-6">
+              <img src={item.image} alt={item.title} />
+
+              <h3 className="text-2xl font-extrabold text-[#0B0C58] mb-2">
+                {item.title}
+              </h3>
+              <p className="text-gray-700">{item.description}</p>
+            </div>
+          ))}
+        </div>
+        {/* Custom wrap the last two items */}
+        <div className=" flex justify-center gap-6 w-1/2">
+          {values.slice(3).map((item, index) => (
+            <div
+              key={index}
+              className="bg-white shadow rounded-2xl p-6  md:w-1/2 "
+            >
+              <img src={item.image} alt={item.title} />
+              <h3 className="text-2xl font-extrabold text-[#0B0C58] mb-2">
+                {item.title}
+              </h3>
+              <p className="text-gray-700">{item.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+      {/* Authors Section */}
+      <section className="flex flex-col items-center  py-20 space-y-4 ">
+        <span
+          className="text-xs uppercase font-semibold text-[#353535] mb-2 w-max p-2 rounded-full"
+          style={{
+            background:
+              "linear-gradient(269.21deg, rgba(125, 127, 244, 0.26) 1.92%, rgba(3, 3, 208, 0.14) 26.97%, rgba(6, 6, 82, 0.02) 92.72%)",
+          }}
+        >
+          Our Authors
+        </span>
+        <p className="text-4xl font-extrabold text-[#0B0C58]">About Authors</p>
+        <div className="grid grid-cols-4 gap-2 gap-y-4">
+          {authors.map((author, index) => (
+            <div key={index} className="flex flex-col space-y-2">
+              <img
+                className="rounded-2xl"
+                src={author.image}
+                alt={author.title}
+              />
+              <p className="text-[#0B0C58] font-extrabold text-xl">
+                {author.name}
+              </p>
+              <p className="text-[#525252]">{author.title}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Banner Section */}
+      <section></section>
     </div>
   );
 };
