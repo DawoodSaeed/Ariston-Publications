@@ -11,6 +11,7 @@ import innovation from "../assets/innovation.svg";
 import collaboration from "../assets/collaboration.svg";
 import author from "../assets/author.svg";
 import servicesmain from "../assets/servicesmain.png";
+import NewsletterSubscribeCard from "@/components/home/Newsletter";
 
 const values = [
   {
@@ -249,6 +250,8 @@ const About = () => {
           ))}
         </div>
       </section>
+
+      <NewsletterSubscribeCard />
     </div>
   );
 };

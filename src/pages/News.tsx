@@ -1,5 +1,7 @@
 import messageicon from "../assets/messageicon.svg";
 import resourceimg from '../assets/resources.png'
+import NewsletterSubscribeCard from "@/components/home/Newsletter";
+
 const events = [
   {
     id: 1,
@@ -187,17 +189,17 @@ const News = () => {
           </button>
         </div>
 
-        <div className="grid grid-cols-3 gap-8"> 
-          {
-            resources.map((itm,index)=>(
-              <div key={index} className="border border-[red]">
-                <img src={itm.image} alt="" />
-                <p>{itm.title}</p>
-              </div>
-            ))
-          }
+        <div className="grid grid-cols-3 gap-8">
+          {resources.map((itm, index) => (
+            <div key={index} className="border border-[red]">
+              <img src={itm.image} alt="" />
+              <p>{itm.title}</p>
+            </div>
+          ))}
         </div>
       </section>
+
+      <NewsletterSubscribeCard />
     </div>
   );
 };

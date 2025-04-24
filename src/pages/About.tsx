@@ -17,6 +17,8 @@ import inclusivity from "../assets/inclusivity.svg";
 import innovation from "../assets/innovation.svg";
 import collaboration from "../assets/collaboration.svg";
 import author from "../assets/author.svg";
+import NewsletterSubscribeCard from "@/components/home/Newsletter";
+
 
 const workWeDo = [
   {
@@ -359,6 +361,7 @@ const About = () => {
 
       {/* Banner Section */}
       <section></section>
+      <NewsletterSubscribeCard />
     </div>
   );
 };
