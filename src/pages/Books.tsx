@@ -97,9 +97,10 @@ const Journals = () => {
         books={popularBooks}
         title="Our Books"
         sectionBadgeTitle="Our Books"
-        description="Ariston Publications is a premier publisher of high-impact journals spanning Science, Engineering, Medicine, Computer Science, Artificial Intelligence, Materials Science, Chemical Science, Energy, and Environment. Committed to excellence, we uphold rigorous peer review and open-access dissemination. Explore our distinguished journal portfolio for cutting-edge research."
         onViewMore={() => {}}
         background="white"
+        viewMoreBtn={false}
+        description="Discover a diverse collection of books that inspire, educate, and empower. Whether you're looking for academic research, insightful literature, or engaging reads, our collection offers something for everyone."
       />
     </div>
   );

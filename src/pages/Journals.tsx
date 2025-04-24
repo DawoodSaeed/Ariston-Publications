@@ -75,6 +75,7 @@ const Journals = () => {
         description="Ariston Publications is a premier publisher of high-impact journals spanning Science, Engineering, Medicine, Computer Science, Artificial Intelligence, Materials Science, Chemical Science, Energy, and Environment. Committed to excellence, we uphold rigorous peer review and open-access dissemination. Explore our distinguished journal portfolio for cutting-edge research."
         onViewMore={() => {}}
         background="white"
+        viewMoreBtn={false}
       />
     </div>
   );

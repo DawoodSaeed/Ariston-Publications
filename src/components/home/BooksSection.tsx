@@ -19,6 +19,7 @@ interface BooksSectionProps {
   onViewMore?: () => void;
   sectionBadgeTitle?: string;
   background?: string;
+  viewMoreBtn?: boolean;
 }
 
 const BooksSection = ({
@@ -28,6 +29,7 @@ const BooksSection = ({
   onViewMore,
   sectionBadgeTitle = "OUR BOOKS",
   background = "white",
+  viewMoreBtn = true,
 }: BooksSectionProps) => {
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
     slides: {
@@ -53,10 +55,12 @@ const BooksSection = ({
         {/* Header */}
         <div className="flex flex-col mb-6">
           <SectionBadge title={sectionBadgeTitle} />
-          <div className="flex justify-between items-center mt-4">
-            <h2 className="text-4xl font-bold text-[#1a1b4b]">{title}</h2>
-            {onViewMore && <ViewMoreButton onClick={onViewMore} />}
-          </div>
+          {viewMoreBtn && (
+            <div className="flex justify-between items-center mt-4">
+              <h2 className="text-4xl font-bold text-[#1a1b4b]">{title}</h2>
+              {onViewMore && <ViewMoreButton onClick={onViewMore} />}
+            </div>
+          )}
         </div>
 
         {/* Description */}
