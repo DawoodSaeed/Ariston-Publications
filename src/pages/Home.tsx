@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import BooksSection from "@/components/home/BooksSection";
 import ValuePropositions from "@/components/home/ValuePropositions";
 import RecentArticles, { Article } from "@/components/home/RecentArticles";
