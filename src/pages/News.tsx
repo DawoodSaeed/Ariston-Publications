@@ -1,4 +1,7 @@
 import messageicon from "../assets/messageicon.svg";
+import resourceimg from '../assets/resources.png'
+import NewsletterSubscribeCard from "@/components/home/Newsletter";
+
 const events = [
   {
     id: 1,
@@ -43,6 +46,38 @@ const events = [
     readMoreLink: "/news/launch-matsci-express",
   },
 ];
+const resources=[
+  {
+    "date": "June 2025",
+    "title": "Gadolinium-Doped Carbon Quantum Dots for Dual and Multi-Modal Bioimaging: Synthesis Methods and Applications",
+    "image":resourceimg
+  },
+  {
+    "date": "June 2025",
+    "title": "Investigating the Potential of Gd3+ doped LiBPO4 Phosphors in Improving White Lighting Applications: Synthesis..",
+    "image": resourceimg
+  },
+  {
+    "date": "June 2025",
+    "title": "Advancements in Gadolinium-Doped Carbon Quantum Dots for Dual and Multi-Modal Bioimaging: Synthesis Methods and...",
+    "image":resourceimg
+  },
+  {
+    "date": "June 2025",
+    "title": "Gadolinium-Doped Carbon Quantum Dots for Dual and Multi-Modal Bioimaging: Synthesis Methods and Applications",
+    "image":resourceimg
+  },
+  {
+    "date": "June 2025",
+    "title": "Investigating the Potential of Gd3+ doped LiBPO4 Phosphors in Improving White Lighting Applications: Synthesis..",
+    "image":resourceimg
+  },
+  {
+    "date": "June 2025",
+    "title": "Advancements in Gadolinium-Doped Carbon Quantum Dots for Dual and Multi-Modal Bioimaging: Synthesis Methods and...",
+    "image": resourceimg
+  }
+]
 
 const News = () => {
   return (
@@ -153,7 +188,18 @@ const News = () => {
             Popular
           </button>
         </div>
+
+        <div className="grid grid-cols-3 gap-8">
+          {resources.map((itm, index) => (
+            <div key={index} className="border border-[red]">
+              <img src={itm.image} alt="" />
+              <p>{itm.title}</p>
+            </div>
+          ))}
+        </div>
       </section>
+
+      <NewsletterSubscribeCard />
     </div>
   );
 };
