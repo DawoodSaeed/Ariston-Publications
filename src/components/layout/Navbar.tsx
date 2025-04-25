@@ -33,6 +33,9 @@ const Navbar = () => {
           <Link to="/services" className="text-sm font-medium">
             Our Services
           </Link>
+          <Link to="/contactUs" className="text-sm font-medium">
+           Contact Us
+          </Link>
         </nav>
 
         <div className="flex items-center gap-4">
