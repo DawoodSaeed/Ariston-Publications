@@ -138,30 +138,7 @@ const Contact=()=>{
             </div>
 
             <div className="bg-gray-200 p-6 rounded-lg">
-              {/* <p className="text-sm font-semibold text-slate-900">
-                I'm interested in...
-              </p>
-
-              <div className="space-y-4 max-lg:mt-4">
-                <button
-                  type="button"
-                  className="px-4 py-2 rounded-lg bg-[#facc15] text-white text-sm tracking-wider font-medium outline-none border-2 border-[#facc15] mr-4"
-                >
-                  Web design
-                </button>
-                <button
-                  type="button"
-                  className="px-4 py-2 rounded-lg bg-transparent text-slate-900 text-sm tracking-wider font-medium outline-none border-2 border-gray-300 mr-4"
-                >
-                  Graphic design
-                </button>
-                <button
-                  type="button"
-                  className="px-4 py-2 rounded-lg bg-transparent text-slate-900 text-sm tracking-wider font-medium outline-none border-2 border-gray-300"
-                >
-                  Design system
-                </button>
-              </div> */}
+             
 
               <form className="mt-8 space-y-4">
                 <input
