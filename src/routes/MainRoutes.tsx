@@ -6,13 +6,15 @@ import Books from "@/pages/Books";
 import Journals from "@/pages/Journals";
 import About from "@/pages/About";
 import News from "@/pages/News";
+import Contact from "@/pages/Contact"
 import Services from "@/pages/Services";
 import NotFound from "@/pages/NotFound";
 import AdminLayout from "@/components/layout/AdminLayout";
 import UserLayout from "@/components/layout/UserLayout";
 import AdminDashboard from "@/pages/admin/Dashboard";
 import UserDashboard from "@/pages/user/Dashboard";
-
+import Login from "@/pages/Login";
+import RegisterUser from "@/pages/RegisterUser";
 const MainRoutes = () => {
   return (
     <Routes>
@@ -24,6 +26,10 @@ const MainRoutes = () => {
         <Route path="/about" element={<About />} />
         <Route path="/news" element={<News />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/contactUs" element={<Contact />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<RegisterUser />} />
+
       </Route>
 
       {/* Admin routes */}

@@ -1,0 +1,40 @@
+{
+  "hash": "0d583a72",
+  "configHash": "9c01f1b7",
+  "lockfileHash": "9fc405c0",
+  "browserHash": "709dbdd7",
+  "optimized": {
+    "react/jsx-dev-runtime": {
+      "src": "../../node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "2147f819",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "3db760cf",
+      "needsInterop": true
+    },
+    "@tanstack/react-query": {
+      "src": "../../node_modules/@tanstack/react-query/build/modern/index.js",
+      "file": "@tanstack_react-query.js",
+      "fileHash": "6a39c1a6",
+      "needsInterop": false
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "26e5e395",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-XUMYNYTV": {
+      "file": "chunk-XUMYNYTV.js"
+    },
+    "chunk-MRF63CFJ": {
+      "file": "chunk-MRF63CFJ.js"
+    }
+  }
+}
