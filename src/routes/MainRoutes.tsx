@@ -14,6 +14,7 @@ import UserLayout from "@/components/layout/UserLayout";
 import AdminDashboard from "@/pages/admin/Dashboard";
 import UserDashboard from "@/pages/user/Dashboard";
 import Login from "@/pages/Login";
+import RegisterUser from "@/pages/RegisterUser";
 const MainRoutes = () => {
   return (
     <Routes>
@@ -27,6 +28,8 @@ const MainRoutes = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/contactUs" element={<Contact />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<RegisterUser />} />
+
       </Route>
 
       {/* Admin routes */}
