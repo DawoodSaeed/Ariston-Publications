@@ -54,9 +54,13 @@ const Navbar = () => {
               Login
             </Button>
           </Link>
+          <Link to="/contactUs">
+
           <Button variant="default" className="bg-blue-800 hover:bg-blue-700">
             Contact Us
           </Button>
+          </Link>
+
         </div>
       </div>
     </header>
