@@ -4,6 +4,7 @@ import BookCard from "./BookCard";
 import ViewMoreButton from "@/components/ui/view-more-button";
 import SectionBadge from "@/components/ui/section-badge";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface Book {
   title: string;
@@ -86,7 +87,9 @@ const BooksSection = ({
                 key={book.title}
                 className="keen-slider__slide flex justify-center"
               >
-                <BookCard {...book} />
+                <Link to={`/journal/${book.title}`}>
+                  <BookCard {...book} />
+                </Link>
               </div>
             ))}
           </div>

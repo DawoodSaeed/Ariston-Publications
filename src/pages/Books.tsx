@@ -1,15 +1,12 @@
 import BooksSection from "@/components/home/BooksSection";
 import HeroSection from "@/components/home/HeroSection";
-import book1 from "../assets/book1.png";
-import book2 from "../assets/book2.png";
-import book3 from "../assets/book3.png";
-
 
 const popularBooks = [
   {
     title: "Nanocomposites: Advancing Materials For Modern Applications",
     author: "Ahmad Umar",
-    image:book1,
+    image:
+      "https://s3-alpha-sig.figma.com/img/0ef1/1cd5/5badfdb4a3225ea78e2bfaae127751f9?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=fLOgoC5RiUstXCXhZLOLknnrJd1uoiNB0yhzAjqYrjz8hQr7jqQuvbIsy~B~xJ1lS4gi94QvVGgmPgoZCevfp2unC0h4QE8xneNxxAviX4p21n8FGyO7nsaA--SUM7fCsVl2m8jKz7NK56bOUAgzfIhFyUQj2ohZTmYhkzfOWS8B6GDsjHamC4q2tYSloKkbLGzWL7-SsdhMmhZ~qiQATGMEkFIsvdkILvsymexCLrsleGezQwmIS7i~huNeSr1lC6bV58CvrFIVpImQCTwJjTNyUQj-yJWIcC12FDtJa9UVExRTvgPClhbCfDMklazol3HvBdrbrhKymu7iCudS3w__",
     description:
       "Explore the cutting-edge world of nanocomposites and their applications in modern technology.",
   },
@@ -17,7 +14,8 @@ const popularBooks = [
     title:
       "Millets And Millet Products: From Traditional Grains To Nutritional PowerHouses",
     author: "Kuldeep Kumar",
-    image:book2,
+    image:
+      "https://s3-alpha-sig.figma.com/img/ea0b/dbc6/ae5111a68b47a602892a050862c67d85?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=XJcfBhYbFAkPCUUG1P1ovlb84t~o0SlfGpuFnUyACSCEdYErfZkUvOACjr~u3XGHrY8fwOs2xMEFNVeCbmhrvBQjSJQb44rZB8swFC~jD6xtQH3xC0a4aHc8SkeMebZkfMPa0J7QukODCp8KO6Sp7~OfShaskYE0uYCUUH-bIdl3dU0-DMxIq9CGaECDUqVza95RYOBAdLY6HzXdgG9zr8WI67MwSq3IpfywlqIzAMlL-DTN5kllO~EV209IeAjjdz3h24nGtXLebBvILpSyW2XEz95A3NayaKZZbsJPEW9EM4m7Fvix3N4WpNjL3CDNuPD3F5gtTNpMgSfARz2eWA__",
     description:
       "Discover the nutritional benefits and versatility of traditional millet grains.",
   },
@@ -25,8 +23,9 @@ const popularBooks = [
     title:
       "Nanoscience And Nanotechnology: Sustainable Phyto-Diversity Conservation And Human Health",
     author: "Ahmad Umar",
-    image:book3,
-        description:
+    image:
+      "https://s3-alpha-sig.figma.com/img/879f/2f57/535860765c1325ea9535dbedc35f3c9a?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=HvDdtM~eoyk9MOgjpHaKJVwzD9VKrAAkffxRqoFpkJICbg3-tpTa3VVTxmsWbLaFxgdY84IDnnnCtLKY1D1hzQPpWOBuk-3i946socsbvfad2fxJR7rSY79voldL6x8SNlBGf7Mq7SjeuP3-NVMgsVa2xHAzkUYBcND95eY3AjzuIDql4sy2py6-TiOiIXA52z0LgjA4DNamQLTMiu2RsBn2UYtWkvNVmJ7GTmUZ1XdV1aJljGEz6KioQDssfqFjI6So4CccwDw02OUIZ~keR4y~CzShZZ0U7V0UL1tO~Lvl8--qfPWBK2KN7NvzTPMT6vmxreqL~RFDxZjCXUkjbQ__",
+    description:
       "Learn about the intersection of nanotechnology and sustainable conservation.",
   },
   {

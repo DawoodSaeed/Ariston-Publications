@@ -1,0 +1,54 @@
+{
+  "journalPage": [
+    {
+      "title": "CompSci & AI Advances",
+      "subtitle": "A Multidisciplinary Computer & AI Journal",
+      "description": "CompSci & AI Advances is a leading multidisciplinary peer-reviewed international journal focused on publishing high-quality research and developments in the fields of computer science and artificial intelligence. The journal provides a platform for academics, researchers, and professionals to explore and share innovative ideas, groundbreaking studies, and practical applications that drive the evolution of computing and AI technologies. CompSci & AI Advances has a wide-ranging scope that includes artificial intelligence (AI), computing systems, data science, human-computer interaction, robotics, automation, Machine Learning, Deep Learning, Neural Networks, Natural Language Processing (NLP), Computer Vision, Autonomous Systems, Edge Computing, AI Ethics, Supervised Learning, Unsupervised Learning, Reinforcement Learning, Big Data Analytics, Robotics, AI-Powered Automation, Data Mining, Generative AI, Artificial General Intelligence (AGI), Human-Computer Interaction (HCI), AI in Healthcare, Cognitive Computing, Explainable AI (XAI), AI-enhanced Software Development, Quantum Computing, Edge Computing, Cloud Computing, 5G Technology, High-Performance Computing (HPC), Parallel Computing, Blockchain Technology, Neuromorphic Computing, Cybersecurity, Internet of Things (IoT), Wearable Computing, Ubiquitous Computing, Green Computing, Solid-State Drives (SSD), Virtualization, Serverless Computing, Distributed Computing, Cryptography, Microprocessors, GPU Acceleration, Data Centers, Energy-Efficient Computing, Optical Computing, Embedded Systems, 3D Integration, Computer Architecture, Augmented Reality (AR), Virtual Reality (VR), cybersecurity, and so on. The journal is committed to advancing knowledge across all disciplines of computers and Artificial intelligence. We emphasize interdisciplinary approaches and contributions that address both theoretical foundations and real-world challenges, while also considering the ethical and societal implications of technological progress. The mission of CompSci & AI Advances is to foster a global exchange of ideas and to bridge the gap between academic research and industry practice, promoting responsible and impactful advancements in AI and computing for the betterment of society.",
+      "imagePath": "/images/journals/cs.jpg",
+      "volumes": [
+        {
+          "volumeName": "Volume 2, Issue 1 (March 2025)",
+          "researchArticles": [
+            {
+              "title": "Hybrid Quantum–Classical Optimization for Cloud Resource Allocation: A Scalable Framework for Energy–Efficient Computing, Implementation, and Security Features",
+              "authors": "K. Kalpana, S. Kavitha, S. Chinnapparaj, V. V. Terresa, C. Sincija, Guangda Liu",
+              "abstract": "The study proposes a Quantum-Driven Optimization (QDO) framework combining quantum and classical techniques to enhance cloud resource allocation. Leveraging QA and VQE, QDO improves resource utilization by 27%, reduces costs by 34%, and decreases SLA violations by 18% compared to traditional methods. The hybrid approach ensures scalability and energy efficiency in dynamic cloud environments. While quantum hardware limitations remain, the framework sets a foundation for future research in multi-cloud integration and real-time quantum processing, advancing sustainable cloud computing solutions.",
+              "publishedDate": "21 September 2024",
+              "doi": "https://doi.org/10.69626/cai.2025.0001",
+              "imageUrl": "https://aristonpubs.com/wp-content/uploads/2025/04/image-11.png"
+            },
+            {
+              "title": "Secure and Decentralized AI for Smart Cities: A Federated Learning and Blockchain–Enabled Predictive Analytics Framework",
+              "authors": "N. Purandhar, C. Sincija, Ahmed Mudassar Ali, B. Menakadevi, A. Anist, Mei Bie",
+              "abstract": "The study proposes AIPAF, a Federated Learning and Blockchain-based framework for secure AI-driven smart city analytics. AIPAF decentralizes model training, preserving privacy and reducing data costs by 40%, while blockchain ensures tamper-proof security, cutting unauthorized access by 45%. It achieves 32% higher accuracy than centralized AI and improves energy efficiency by 25%. Challenges like computational overhead remain, but AIPAF sets a foundation for future research in quantum-resistant encryption and explainable AI, advancing scalable, privacy-aware urban intelligence.",
+              "publishedDate": "03 October 2024",
+              "doi": "https://doi.org/10.69626/cai.2025.0013",
+              "imageUrl": "https://aristonpubs.com/wp-content/uploads/2025/04/image-12.png"
+            }
+          ]
+        },
+        {
+          "volumeName": "Volume 1, Issue 2 (December 2024)",
+          "researchArticles": [
+            {
+              "title": "Cost Effective IoT Based Smart Home Automation System: Design, Implementation, and Security Features",
+              "authors": "M. Senthil, G. Navaneetha Krishnan, P. Anitha, S. K. Heena, T. Jaya Sri",
+              "abstract": "The proposed IoT-based smart home automation system offers an affordable and user-friendly platform for controlling household appliances. With Wi-Fi connectivity, voice commands, activity sensors, and a mobile app, the system supports seamless device integration and future scalability via an SDK. Security is reinforced using 256-bit AES encryption, while energy efficiency is achieved through features like automated device shutdown and real-time energy monitoring. These functionalities make the system a comprehensive solution for enhancing convenience, security, and sustainability in modern living spaces.",
+              "publishedDate": "28 July 2024",
+              "doi": "https://doi.org/10.69626/cai.2024.0158",
+              "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/12/image-15.png"
+            },
+            {
+              "title": "Transforming Healthcare with Deep Learning: A Revolutionary Approach to Health Information System",
+              "authors": "Saravanan Kandaneri Ramamoorthy, Praveenkumar Babu, S.Sakena Benazer",
+              "abstract": "This paper introduces HealthAI, a revolutionary deep learning-based framework for healthcare systems. By integrating advanced AI techniques, HealthAI analyzes diverse data sources, including EHRs, medical imaging, wearable devices, and genetic information. It provides actionable insights for predictive analytics, personalized treatment plans, and real-time clinical decision-making. Early trials demonstrate its potential to reduce diagnostic errors, improve patient outcomes, and streamline operations. The study details HealthAI’s architecture, implementation, and applications, positioning it as a transformative advancement in modern healthcare.",
+              "publishedDate": "07 August 2024",
+              "doi": "https://doi.org/10.69626/cai.2024.0168",
+              "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/12/image-29.png"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+.journal-container {
+  display: flex;
+  background-color: white;
+}
+
+.sidebar {
+  width: 18%;
+  background-color: #002060;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar.right {
+  width: 20%;
+  background-color: #001040;
+}
+
+.journal-main {
+  width: 62%;
+  padding: 20px;
+}
+
+.journal-header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.recent-articles {
+  margin-top: 20px;
+}

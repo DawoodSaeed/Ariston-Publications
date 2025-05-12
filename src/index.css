@@ -98,5 +98,6 @@
   body {
     @apply bg-background text-foreground font-sans;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    font-family: Inter;
   }
 }

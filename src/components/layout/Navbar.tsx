@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b bg-white">
+    <header className="top-0 left-0 right-0 z-50 border-b bg-white">
       <div className="container mx-auto flex items-center justify-between py-4">
         <Link to="/" className="flex items-center">
           <img
@@ -34,7 +34,7 @@ const Navbar = () => {
             Our Services
           </Link>
           <Link to="/contactUs" className="text-sm font-medium">
-           Contact Us
+            Contact Us
           </Link>
         </nav>
 
@@ -55,12 +55,10 @@ const Navbar = () => {
             </Button>
           </Link>
           <Link to="/contactUs">
-
-          <Button variant="default" className="bg-blue-800 hover:bg-blue-700">
-            Contact Us
-          </Button>
+            <Button variant="default" className="bg-blue-800 hover:bg-blue-700">
+              Contact Us
+            </Button>
           </Link>
-
         </div>
       </div>
     </header>
