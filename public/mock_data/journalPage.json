@@ -5,48 +5,342 @@
       "subtitle": "A Multidisciplinary Computer & AI Journal",
       "description": "CompSci & AI Advances is a leading multidisciplinary peer-reviewed international journal focused on publishing high-quality research and developments in the fields of computer science and artificial intelligence. The journal provides a platform for academics, researchers, and professionals to explore and share innovative ideas, groundbreaking studies, and practical applications that drive the evolution of computing and AI technologies. CompSci & AI Advances has a wide-ranging scope that includes artificial intelligence (AI), computing systems, data science, human-computer interaction, robotics, automation, Machine Learning, Deep Learning, Neural Networks, Natural Language Processing (NLP), Computer Vision, Autonomous Systems, Edge Computing, AI Ethics, Supervised Learning, Unsupervised Learning, Reinforcement Learning, Big Data Analytics, Robotics, AI-Powered Automation, Data Mining, Generative AI, Artificial General Intelligence (AGI), Human-Computer Interaction (HCI), AI in Healthcare, Cognitive Computing, Explainable AI (XAI), AI-enhanced Software Development, Quantum Computing, Edge Computing, Cloud Computing, 5G Technology, High-Performance Computing (HPC), Parallel Computing, Blockchain Technology, Neuromorphic Computing, Cybersecurity, Internet of Things (IoT), Wearable Computing, Ubiquitous Computing, Green Computing, Solid-State Drives (SSD), Virtualization, Serverless Computing, Distributed Computing, Cryptography, Microprocessors, GPU Acceleration, Data Centers, Energy-Efficient Computing, Optical Computing, Embedded Systems, 3D Integration, Computer Architecture, Augmented Reality (AR), Virtual Reality (VR), cybersecurity, and so on. The journal is committed to advancing knowledge across all disciplines of computers and Artificial intelligence. We emphasize interdisciplinary approaches and contributions that address both theoretical foundations and real-world challenges, while also considering the ethical and societal implications of technological progress. The mission of CompSci & AI Advances is to foster a global exchange of ideas and to bridge the gap between academic research and industry practice, promoting responsible and impactful advancements in AI and computing for the betterment of society.",
       "imagePath": "/images/journals/cs.jpg",
-      "volumes": [
+        "volumes": [
+    {
+      "volumeName": "Volume 2, Issue 2",
+      "researchArticles": [
         {
-          "volumeName": "Volume 2, Issue 1 (March 2025)",
-          "researchArticles": [
-            {
-              "title": "Hybrid Quantum–Classical Optimization for Cloud Resource Allocation: A Scalable Framework for Energy–Efficient Computing, Implementation, and Security Features",
-              "authors": "K. Kalpana, S. Kavitha, S. Chinnapparaj, V. V. Terresa, C. Sincija, Guangda Liu",
-              "abstract": "The study proposes a Quantum-Driven Optimization (QDO) framework combining quantum and classical techniques to enhance cloud resource allocation. Leveraging QA and VQE, QDO improves resource utilization by 27%, reduces costs by 34%, and decreases SLA violations by 18% compared to traditional methods. The hybrid approach ensures scalability and energy efficiency in dynamic cloud environments. While quantum hardware limitations remain, the framework sets a foundation for future research in multi-cloud integration and real-time quantum processing, advancing sustainable cloud computing solutions.",
-              "publishedDate": "21 September 2024",
-              "doi": "https://doi.org/10.69626/cai.2025.0001",
-              "imageUrl": "https://aristonpubs.com/wp-content/uploads/2025/04/image-11.png"
-            },
-            {
-              "title": "Secure and Decentralized AI for Smart Cities: A Federated Learning and Blockchain–Enabled Predictive Analytics Framework",
-              "authors": "N. Purandhar, C. Sincija, Ahmed Mudassar Ali, B. Menakadevi, A. Anist, Mei Bie",
-              "abstract": "The study proposes AIPAF, a Federated Learning and Blockchain-based framework for secure AI-driven smart city analytics. AIPAF decentralizes model training, preserving privacy and reducing data costs by 40%, while blockchain ensures tamper-proof security, cutting unauthorized access by 45%. It achieves 32% higher accuracy than centralized AI and improves energy efficiency by 25%. Challenges like computational overhead remain, but AIPAF sets a foundation for future research in quantum-resistant encryption and explainable AI, advancing scalable, privacy-aware urban intelligence.",
-              "publishedDate": "03 October 2024",
-              "doi": "https://doi.org/10.69626/cai.2025.0013",
-              "imageUrl": "https://aristonpubs.com/wp-content/uploads/2025/04/image-12.png"
-            }
-          ]
+          "title": "Optimizing Precursor Concentration for Enhanced Morphological and Catalytic Performance of ZnO Nanoparticles in Crystal Violet Dye Degradation",
+          "authors": "Vaishnavi Bote, Bharati Shinde, Rupali Chavan, Aishwarya Jadhav, Rajesh Ghorpade, Shivaji Jamadade, Rahul Patil, Jyotiprakash Yadav, Ashok Chougale, Vishalkumar More",
+          "abstract": "ZnO nanoparticles were synthesized via co-precipitation at varying precursor concentrations (0.025–0.2 M), with 0.1 M yielding optimal spherical morphology and 91.09% dye degradation. Photo-Fenton experiments revealed peak efficiency at 90 mg/L catalyst, 0.1 M H₂O₂, and 0.05 mM dye concentration. The study correlates nanoparticle crystallinity/morphology with catalytic performance, demonstrating visible-light-driven degradation mechanisms. This optimization framework enables tailored ZnO synthesis for industrial wastewater treatment, achieving 95.42% efficiency under ideal conditions while balancing economic and environmental factors.",
+          "publishedDate": "29 January 2025",
+          "doi": "https://doi.org/10.69626/csa.2025.0104",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2025/04/image-2.png"
         },
         {
-          "volumeName": "Volume 1, Issue 2 (December 2024)",
-          "researchArticles": [
-            {
-              "title": "Cost Effective IoT Based Smart Home Automation System: Design, Implementation, and Security Features",
-              "authors": "M. Senthil, G. Navaneetha Krishnan, P. Anitha, S. K. Heena, T. Jaya Sri",
-              "abstract": "The proposed IoT-based smart home automation system offers an affordable and user-friendly platform for controlling household appliances. With Wi-Fi connectivity, voice commands, activity sensors, and a mobile app, the system supports seamless device integration and future scalability via an SDK. Security is reinforced using 256-bit AES encryption, while energy efficiency is achieved through features like automated device shutdown and real-time energy monitoring. These functionalities make the system a comprehensive solution for enhancing convenience, security, and sustainability in modern living spaces.",
-              "publishedDate": "28 July 2024",
-              "doi": "https://doi.org/10.69626/cai.2024.0158",
-              "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/12/image-15.png"
-            },
-            {
-              "title": "Transforming Healthcare with Deep Learning: A Revolutionary Approach to Health Information System",
-              "authors": "Saravanan Kandaneri Ramamoorthy, Praveenkumar Babu, S.Sakena Benazer",
-              "abstract": "This paper introduces HealthAI, a revolutionary deep learning-based framework for healthcare systems. By integrating advanced AI techniques, HealthAI analyzes diverse data sources, including EHRs, medical imaging, wearable devices, and genetic information. It provides actionable insights for predictive analytics, personalized treatment plans, and real-time clinical decision-making. Early trials demonstrate its potential to reduce diagnostic errors, improve patient outcomes, and streamline operations. The study details HealthAI’s architecture, implementation, and applications, positioning it as a transformative advancement in modern healthcare.",
-              "publishedDate": "07 August 2024",
-              "doi": "https://doi.org/10.69626/cai.2024.0168",
-              "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/12/image-29.png"
-            }
-          ]
+          "title": "pH–Controlled Synthesis of Magnetic Fe3O4 Nanoparticles for Enhanced Crystal Violet Dye Degradation via Photo–Fenton Process",
+          "authors": "Ankita Patil, Rupali Chavan, Aishwarya Jadhav, Aviraj Jatratkar, Rahul Patil, Nilesh Pawar, Ashok Chougale",
+          "abstract": "Fe₃O₄ nanoparticles were synthesized via co-precipitation at pH 6-9, with pH-7 variants showing superior crystallinity and catalytic performance. Characterization confirmed pure-phase cubic spinel structure with optimal surface properties. In photo-Fenton degradation, pH-7 nanoparticles achieved 94% crystal violet removal (0.1 mM) using 0.1 M H₂O₂, maintaining 82% efficiency after 5 cycles. The study establishes synthesis pH as a critical parameter for tuning nanoparticle activity, presenting an effective, recyclable solution for dye pollution with complete degradation evidenced by UV-Vis spectral changes at 590 nm.",
+          "publishedDate": "03 February 2025",
+          "doi": "https://doi.org/10.69626/csa.2025.0114",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2025/04/image-3.png"
+        },
+        {
+          "title": "Impact of Sn–In Codoping on Structural, Morphological, and Optoelectronic Properties of Spray–Deposited ZnO Thin Films",
+          "authors": "Bijayalaxmi Sahoo, Abinash Pradhan, Shantinarayan Rout, Debadhyan Behera",
+          "abstract": "This study is focused on the modification of microstructure and optical properties of ZnO thin films with Sn-In codoping. Change of crystallite orientation as well as nanoparticle morphology is observed with codoping. Particle size also reduces which may be seen as a result of interruption of particle growth. The decrease of transmittance is attributed to the increase of scattering of photons by defects created by doping. PL spectra indicate presence of various intrinsic defects in the film. Controlling the intrinsic defects in ZnO is quite essential to understand its applicability as a transparent conductor material in optoelectronic devices.",
+          "publishedDate": "10 February 2025",
+          "doi": "https://doi.org/10.69626/csa.2025.0125",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2025/04/image-4.png"
+        },
+        {
+          "title": "Synthesis, Spectroscopic Characterization, and Thermal Behavior of Co(II), Fe(III), and Mn(III) Complexes Derived from a Novel Schiff Base Ligand",
+          "authors": "V. A. Sadafale",
+          "abstract": "A Schiff base ligand was synthesized from o-vanillin and dapsone, then complexed with Co(II), Fe(III), and Mn(III) ions. The compounds were characterized using elemental analysis, IR, NMR, mass spectrometry, and thermal techniques. Spectroscopic data confirmed bidentate coordination via phenolic oxygen and azomethine nitrogen. Thermal studies revealed high stability (Co > Mn > Fe), with decomposition pathways analyzed through kinetic parameters. The work provides a comprehensive understanding of these complexes’ structural and thermal properties.",
+          "publishedDate": "15 February 2025",
+          "doi": "https://doi.org/10.69626/csa.2025.0136",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2025/04/image-5.png"
+        },
+        {
+          "title": "Successive Ionic Layer Adsorption and Reaction (SILAR) Synthesis of CoMoO4 Nanostructures for High–Performance Supercapacitors: Structural and Electrochemical Characterization",
+          "authors": "Avdhut Sutar, Jayshree Patil, Tejaswini Yadav, Shamal Shingte, Prashant B. Patil, Sachin Pawar",
+          "abstract": "This study demonstrates the successful synthesis of nanostructured cobalt molybdate (CoMoO₄) on Ni-foam using the eco-friendly SILAR method. Structural analysis confirmed its monoclinic crystalline phase, while SEM revealed porous nanofibers enhancing electrochemical activity. The annealed electrode (CM300) exhibited exceptional supercapacitive performance, with a specific capacitance of 1126 F g⁻¹, energy density of 56.34 Wh kg⁻¹, and power density of 340.9 W kg⁻¹. The binder-free design and scalable SILAR approach make CoMoO₄ a promising electrode material for high-performance supercapacitors.",
+          "publishedDate": "21 February 2025",
+          "doi": "https://doi.org/10.69626/csa.2025.0145",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2025/04/image-6.png"
+        },
+        {
+          "title": "Cost–Effective Synthesis and Electrochemical Evaluation of Triphylite NaFePO4 as a Cathode Material for Sodium–Ion Batteries",
+          "authors": "Kiran B. Kore, Sandeep P. Kanade, Rahul Mahadeo Mendhe, Sandesh R. Jadkar, Musthafa Ottakam Thotiyl, Adinath M. Funde",
+          "abstract": "This study demonstrates a cost-effective synthesis of triphylite NaFePO₄/C via chemical delithiation of commercial LiFePO₄, yielding phase-pure material with 25 nm crystallites and flake-like morphology. Electrochemical tests revealed stable cycling (91% retention after 100 cycles at 100 mA/g) and reversible capacities up to 42 mAh/g, despite kinetic limitations at high rates. The work establishes NaFePO₄/C as a viable SIB cathode, leveraging existing LiFePO₄ infrastructure for scalable production.",
+          "publishedDate": "27 February 2025",
+          "doi": "https://doi.org/10.69626/csa.2025.0157",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2025/04/02-TOC-Graphics-Chem-Sci-Advances-2025.png"
+        },
+        {
+          "title": "Cost–Effective Synthesis and Electrochemical Evaluation of Triphylite NaFePO4 as a Cathode Material for Sodium–Ion Batteries",
+          "authors": "Kiran B. Kore, Sandeep P. Kanade, Rahul Mahadeo Mendhe, Sandesh R. Jadkar, Musthafa Ottakam Thotiyl, Adinath M. Funde",
+          "abstract": "This study demonstrates a cost-effective synthesis of triphylite NaFePO₄/C via chemical delithiation of commercial LiFePO₄, yielding phase-pure material with 25 nm crystallites and flake-like morphology. Electrochemical tests revealed stable cycling (91% retention after 100 cycles at 100 mA/g) and reversible capacities up to 42 mAh/g, despite kinetic limitations at high rates. The work establishes NaFePO₄/C as a viable SIB cathode, leveraging existing LiFePO₄ infrastructure for scalable production.",
+          "publishedDate": "27 February 2025",
+          "doi": "https://doi.org/10.69626/csa.2025.0157",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2025/04/02-TOC-Graphics-Chem-Sci-Advances-2025.png"
+        }
+      ]
+    },
+    {
+      "volumeName": "Volume 2, Issue 1",
+      "researchArticles": [
+        {
+          "title": "Catalytic Properties of Asymmetric and Symmetric Materials: A Review",
+          "authors": "Syeda Mehak Batool, Fawad Ahmad, Komal Ali Rao, Mahreen Iqbal, Abdallah Shanableh, Muhammad Imran Khan, Muhammad Babar Taj",
+          "abstract": "This review explores the synthesis and catalytic efficiency of symmetric and asymmetric organic molecules, with a primary focus on platinum-based catalysts. It examines their role in facilitating key chemical reactions and compares platinum group metals (PGMs) with other catalysts in terms of performance, environmental impact, and cost-effectiveness. Alternative catalytic methods, including thermal cracking and catalyst-free routes, are also discussed. The study further highlights recent advancements in catalysis research, aiming to optimize catalyst design for enhanced sustainability and efficiency in industrial applications.",
+          "publishedDate": "20 December 2024",
+          "doi": "https://doi.org/10.69626/csa.2025.0001",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2025/02/image-2.png"
+        },
+        {
+          "title": "Advances in the Synthesis and Biological Applications of Ferrocene–Conjugated Amino Acids, Carbohydrates, Cholesterol and Nucleobases: A Review",
+          "authors": "Anija Mol T Philip, Mayur V Khedkar, Shoeb R Khan, Shibin Chacko",
+          "abstract": "This review highlights recent advancements in the synthesis of ferrocene-conjugated amino acids, carbohydrates, cholesterol, and nucleobases, emphasizing key strategies such as thioalkylation, click chemistry, and amide bond formation. It explores the industrial and medicinal significance of ferrocene derivatives, particularly their applications in drug development for antitumor, antianemic, and antimalarial treatments. The study also discusses the structural, electrochemical, and biological properties of these conjugates, underscoring their potential in biomedical research. Future directions focus on expanding synthetic methodologies to enhance the versatility and therapeutic efficacy of ferrocene-based biomolecules.",
+          "publishedDate": "21 December 2024",
+          "doi": "https://doi.org/10.69626/csa.2025.0033",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2025/02/image-6.png"
+        },
+        {
+          "title": "Predicting Catalytic Efficiency of Nickel Nanoclusters: A Surface Activity Parameter Based Approach for Water Splitting",
+          "authors": "Moumita Dinda, Arijit Bag",
+          "abstract": "This study investigates the catalytic efficiency of nickel nanoclusters in water splitting, introducing the Surface Activity Parameter (SAP) as a predictive metric. The research demonstrates that smaller clusters exhibit higher catalytic efficiency, with SAP following an exponential decay trend as cluster size increases. Key findings include the inverse correlation between SAP and adsorption energy, as well as the influence of molecular interactions such as bond elongation and vibrational frequency shifts. These insights provide a framework for optimizing nickel-based nanocatalysts, facilitating advancements in sustainable energy solutions and hydrogen production.",
+          "publishedDate": "31 December 2024",
+          "doi": "https://doi.org/10.69626/csa.2025.0053",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2025/02/image-3.png"
+        },
+        {
+          "title": "Computational Design and Thermal Properties of Reverse Hybrid Core–Shell Nanoparticles for Photothermal Therapy Applications",
+          "authors": "Fereshteh Shafiepour, Somayeh Salmani Shik, Armin Aminimajd, Mohammad H. Majles Ara",
+          "abstract": "This study computationally investigates the optical and thermal properties of hybrid core-shell nanoparticles for photothermal therapy applications. Using COMSOL Multiphysics, the research examines various configurations of gold nanorods (AuNRs) coated with SiO₂@Fe₃O₄ shells to determine the optimal design for controlled hyperthermia. The results reveal that increasing the shell thickness induces a redshift in the surface plasmon resonance (SPR) wavelength while reducing the core temperature, preventing excessive heating. Among the tested configurations, the 15 nm × 52.5 nm AuNR@60 nm SiO₂@10 nm Fe₃O₄ hybrid NP demonstrates superior performance, achieving a final temperature of 46.2°C, which is ideal for hyperthermia applications. This study provides a foundation for designing next-generation photothermal nanomaterials with enhanced precision and safety in cancer treatment.",
+          "publishedDate": "31 December 2024",
+          "doi": "https://doi.org/10.69626/csa.2025.0061",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2025/02/image-4.png"
+        },
+        {
+          "title": "Highly Selective and Sensitive Electrochemical Detection of Levodopa and Benserazide Using SWCNT–Modified Polyaniline–Based Sensor",
+          "authors": "Ebru Kuyumcu Savan, Gamze Erdoğdu",
+          "abstract": "This study reports the development of an SWCNT-modified polyaniline electrochemical sensor for the simultaneous detection of levodopa (LD) and benserazide (BS), essential drugs in Parkinson’s disease treatment. The sensor, fabricated through electropolymerization of aniline on a glassy carbon electrode (GCE) and modified with SWCNTs, exhibited enhanced electron transfer kinetics, increased surface area, and improved sensitivity. Under optimized conditions (pH 7.0, 1.0% SWCNT solution), the sensor demonstrated linear detection ranges of 500–1000 µM for LD and 100–500 µM for BS, with detection limits of 183.2 µM and 44.5 µM, respectively. Notably, ascorbic acid interference was minimized, ensuring selectivity. Validation studies using pharmaceutical tablets and human urine samples confirmed high accuracy and reliability. The rapid response, cost-effectiveness, and potential for miniaturization make this sensor a valuable alternative for real-time pharmaceutical and clinical monitoring of LD and BS.",
+          "publishedDate": "05 January 2025",
+          "doi": "https://doi.org/10.69626/csa.2025.0075",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2025/02/image-5.png"
+        },
+        {
+          "title": "Sonochemical Synthesis and Structural–Thermal Characterization of CdO–ZnO Mixed Oxide Nanoparticles: XRD and Williamson–Hall Analysis",
+          "authors": "Vikas G. Patil, D. V. Mane",
+          "abstract": "This study synthesizes (CdO)₁₋ₓ(ZnO)ₓ mixed oxide nanoparticles (MONPs) and characterizes their structural and thermal properties. XRD confirms cubic CdO (a≈4.695 Å) and hexagonal ZnO (a≈3.249 Å, c≈5.206 Å), with MONPs exhibiting composition-dependent lattice parameters adhering to Vegard’s law. Ion spacing in tetrahedral (LA) and octahedral (LB) sites increases with lattice expansion. TGA reveals high thermal stability (47.2% residual mass at 800°C) after organic decomposition. Tailorable composition and robustness position MONPs for photocatalysis, sensors, and energy storage, highlighting their promise as advanced functional materials.",
+          "publishedDate": "19 January 2025",
+          "doi": "https://doi.org/10.69626/csa.2025.0085",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2025/04/image.png"
+        },
+        {
+          "title": "Structural, Optical, and Mechanical Properties of Steam–Oxidized MgO–Al2O3 Co–Deposited Mixed Thin Films: Influence of Oxidation Temperature",
+          "authors": "Saipan H. Tamboli, D. M. Sirsat, S. T. Sankapal, S. I. Bagwan, S. S. Tamboli, G. R. Patil, Sikandar H. Tamboli",
+          "abstract": "This study fabricated MgO-Al₂O₃ mixed thin films via steam oxidation (573–673 K) of co-deposited Mg-Al layers. XRD revealed cubic MgO with amorphous Al₂O₃, while SEM showed temperature-dependent morphological evolution. Higher temperatures enhanced optical transmittance (≥450 nm), bandgap (2.9–3.4 eV), and refractive index (1.69–1.72) through improved crystallinity. Mechanical properties exhibited trade-offs: adhesion increased (33–39.9 × 10⁴ N/m²) but so did tensile stress (55–80 × 10⁷ N/m²) due to grain growth and void formation.",
+          "publishedDate": "25 January 2025",
+          "doi": "https://doi.org/10.69626/csa.2025.0095",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2025/04/image-1.png"
+        }
+      ]
+    },
+    {
+      "volumeName": "Volume 1, Issue 4",
+      "researchArticles": [
+        {
+          "title": "Balancing the Essentiality and Genotoxicity of Copper: A Review",
+          "authors": "Faiqua Haque, G. G. H. A. Shadab, Sotirios Baskoutas",
+          "abstract": "This review explores copper’s crucial role as both an essential nutrient and a toxic element, focusing on its involvement in energy production, iron metabolism, and enzyme activity. While copper is indispensable for life, excess accumulation can cause oxidative stress and genotoxicity, leading to chronic health issues. The review also examines copper nanoparticles and anticancer drugs, discussing their therapeutic promise alongside their toxic effects. It provides a comprehensive analysis of copper’s multifaceted role, emphasizing the need for balanced intake and further research into its toxicological profile.",
+          "publishedDate": "17 June 2024",
+          "doi": "https://doi.org/10.69626/csa.2024.0164",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/10/image-3.png"
+        },
+        {
+          "title": "Air Pollutants from Sugar Industry Chimneys: Evaluating Environmental Hazards and Global Mitigation Strategies",
+          "authors": "Mrugendra T. Gurav, Sakshi P. Shinde, Neha J. Nimbalkar, Pratiksha S. Jadhav, Dnyandevo N. Zambare, Sandeep B. Wategaonkar",
+          "abstract": "This study examines the environmental and health impacts of air pollutants from sugar industry chimneys, especially due to the combustion of bagasse. It highlights the release of hazardous pollutants such as particulate matter (PM), SO₂, NOₓ, and VOCs, which contribute to respiratory and cardiovascular diseases, climate change, and broader economic impacts on agriculture and tourism. The paper advocates for transitioning to environmentally sustainable technologies, implementing stricter policies, and adopting pollution control methods to mitigate these emissions effectively.",
+          "publishedDate": "01 October 2024",
+          "doi": "https://doi.org/10.69626/csa.2024.0177",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/10/image-11.png"
+        },
+        {
+          "title": "Applications of Magnetic Nanoparticles for Heavy Metal Ion Removal from Wastewater: A Review",
+          "authors": "Amritpal Singh S., Swapnil S. Kosalge, Pushpinder G. Bhatia",
+          "abstract": "This review examines the potential of magnetic nanoparticles (MNPs) in removing toxic heavy metal ions from wastewater, a pressing environmental challenge due to industrialization. MNPs, such as magnetite nanorods, exhibit high adsorption capacities, fast kinetics, and easy magnetic retrieval, offering a promising alternative to conventional methods like ion exchange and chemical precipitation. The paper discusses MNPs’ synthesis, characterization, and adsorption properties, highlighting their adaptability, cost-effectiveness, and reusability as a sustainable solution for heavy metal removal in water treatment.",
+          "publishedDate": "27 August 2024",
+          "doi": "https://doi.org/10.69626/csa.2024.0196",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/10/image-10.png"
+        },
+        {
+          "title": "Astragalus Polysaccharide in Digestive Health: A Review of Mechanisms, Applications, and Therapeutic Potential",
+          "authors": "Lina Chen, Kai Song",
+          "abstract": "This review explores the potential of Astragalus polysaccharides (APS) in improving digestive health. APS enhances digestive enzyme activity, improves intestinal structure, and regulates gut microbiota, promoting efficient nutrient absorption and intestinal health. With prebiotic effects, APS fosters beneficial gut bacteria and suppresses harmful pathogens, supporting gut immune function. While APS demonstrates significant benefits in aquaculture, livestock, and human health, its precise mechanisms and clinical applications require further investigation, offering a promising avenue for advancing natural therapies in digestive health management.",
+          "publishedDate": "15 September 2024",
+          "doi": "https://doi.org/10.69626/csa.2024.0209",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/11/image-3.png"
+        },
+        {
+          "title": "A Review on SARS CoV–2: History, Origin, Morphology, and the Predicted Strategy to Control the Pandemic through Metals and Metal–Based Compounds",
+          "authors": "Nabtahil Iqbal, Fawad Ahmad, Irum Jamil, Muhammad Imran Khan, Abdallah Shanableh,  Aqsa Naz, Nosheen Farooq, Muhammad Babar Taj, Mushtaq Hussain Lashari, Suryyia Manzoor",
+          "abstract": "The review examines the role of metal-based compounds in COVID-19 therapy. It outlines two strategies—drug repurposing and discovery approaches—for developing effective treatments against SARS-CoV-2. Highlighting the antiviral and immune-modulatory potential of metallodrugs, the study discusses their application as enzyme inhibitors and vaccine adjuvants. Despite challenges like toxicity and safety profiling, metal-based therapeutics hold promise for enhancing treatment efficacy. The review underscores the need for targeted drug development, synergistic therapies, and continued research to address long-term implications and future pandemics.",
+          "publishedDate": "18 September 2024",
+          "doi": "https://doi.org/10.69626/csa.2024.0226",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/12/image.png"
+        }
+      ]
+    },
+    {
+      "volumeName": "Volume 1, Issue 3",
+      "researchArticles": [
+        {
+          "title": "Structural and Anticoagulant Studies of Mg1-xZnxFe2O4, Mg1-xCoxFe2O4 and Mg1-xNixFe2O4 (x=0.15, 0.25 and 0.35) Ferrites Synthesized by Co-Precipitation",
+          "authors": "Rakesh Vishwarup, Shridhar N. Mathad, S. Nagaraju, Sandip V. Kamat, Deepak B. Shirgaonkar",
+          "abstract": "Mg1-xZnxFe2O4, Mg1-xCoxFe2O4, and Mg1-xNixFe2O4 ferrites were synthesized via co-precipitation and structurally characterized using XRD and SEM. The samples exhibited a single-phase cubic spinel structure with varying grain sizes. Anticoagulant properties were assessed, revealing superior performance for ferrites with x=0.35, evidenced by increased re-calcification, prothrombin, and activated partial thromboplastin times, along with reduced platelet aggregation.",
+          "publishedDate": "15 June 2024",
+          "doi": "https://doi.org/10.69626/csa.2024.0111",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/07/image-14.png"
+        },
+        {
+          "title": "Analysis and Impact of Formulated Herbal Medicine Against COVID-19 and Other Viral Infections",
+          "authors": "Santosh Gajanan Kate, Vishal Vilas Dawkar",
+          "abstract": "Chronheal-7, a polyherbal formulation comprising G. glabra, P. niruri, S. xanthocarpum, B. diffusa, E. alba, and W. somnifera, demonstrated significant antiviral activity against SARS-CoV-2, dengue, and chikungunya. In Vitro and In Vivo studies revealed 49.45% SARS-CoV-2 inhibition and non-toxicity to human cells. Chronheal-7 reduced viral loads and severity in COVID-19 cases, showing potential as a broad-spectrum antiviral and antimicrobial agent.",
+          "publishedDate": "19 June 2024",
+          "doi": "https://doi.org/10.69626/csa.2024.0120",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/07/image-15.png"
+        },
+        {
+          "title": "Structural and Optical Characterization of Chemically Deposited Polycrystalline Cadmium Selenide Thin Films",
+          "authors": "S. H. Mane",
+          "abstract": "Cadmium selenide (CdSe) thin films were synthesized using the CBD technique and characterized for their structural and optical properties. XRD confirmed the polycrystalline nature with a cubic structure and (101) orientation. The average crystallite size was 21.53 nm, and the films exhibited a direct band gap of 1.72 eV. Optical and electrical analyses revealed semiconductor-like behavior, making these films promising candidates for optoelectronic applications. The study demonstrates the effectiveness of CBD in producing high-quality CdSe thin films.",
+          "publishedDate": "24 June 2024",
+          "doi": "https://doi.org/10.69626/csa.2024.0132",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/08/image-6.png"
+        },
+        {
+          "title": "Structural and Morphological Investigation of CoZnFe – Oxide Nanoparticles and Their Electrical and Magnetic Properties",
+          "authors": "Ram S. Barkule, Sudarshana G. Badhe, Mahendra D. Shelar",
+          "abstract": "The study investigates CoZnFe-oxide nanoparticles synthesized via a wet chemical method. Structural analysis confirmed a single-phase cubic spinel structure, while SEM and FTIR identified clustered, spherical nanoparticles with rough surfaces. Electrical and magnetic assessments demonstrated semiconductor-like conduction and ferromagnetic behavior, indicating their suitability for various technological applications, including semiconductor devices, sensors, and biomedical uses.",
+          "publishedDate": "27 June 2024",
+          "doi": "https://doi.org/10.69626/csa.2024.0139",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/09/image.png"
+        },
+        {
+          "title": "Crown Ether Functionalized Barbituric Acid for Colorimetric Determination of Au3+",
+          "authors": "Tanaji R. Bhosale, Sandeep B. Wategaonkar, Prashant P. Patil, Prashant V. Anbhule, Madhukar B. Deshmukh",
+          "abstract": "The research successfully synthesized a new crown ether-functionalized barbituric acid derivative (receptor 3) as a colorimetric probe for detecting Au³⁺ ions. Receptor 3 exhibited remarkable selectivity and sensitivity towards Au³⁺, producing a distinct color change from colorless to violet upon ion interaction, visible to the naked eye. The probe’s detection limit was 2.95 × 10⁻⁵ molL⁻¹ in a DMSO-water solution, proving its efficiency for trace-level detection. This simple and cost-effective sensor offers significant potential for practical applications in environmental and industrial gold ion monitoring.",
+          "publishedDate": "08 July 2024",
+          "doi": "https://doi.org/10.69626/csa.2024.0147",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/10/image-5.png"
+        },
+        {
+          "title": "Temperature–Dependent Rotational Dynamics of a Non–Polar Probe in n–Alkane Solvents: Insights from Hydrodynamic and Quasi–Hydrodynamic Model",
+          "authors": "Anil Kumar, Harshitha D., C. G. Renuka",
+          "abstract": "The study investigates the rotational diffusion of the fluorescent probe 3BT7D2H-one in non-polar solvents n-tridecane and n-hexadecane. Using fluorescence depolarization techniques, the rotational reorientation times (τr) were measured and compared with predictions from hydrodynamic (SED) and quasi-hydrodynamic (GW and DKS) models. The results showed a linear relationship between τr and the viscosity-to-temperature ratio (η/T). Although the SED model provided reasonable approximations, the GW and DKS models failed to accurately capture the experimental behavior, underscoring the need for refined models in complex solvent systems.",
+          "publishedDate": "18 August 2024",
+          "doi": "https://doi.org/10.69626/csa.2024.0155",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/10/image-6.png"
+        }
+      ]
+    },
+    {
+      "volumeName": "Volume 1, Issue 2",
+      "researchArticles": [
+        {
+          "title": "Innovations in Starch Based Bioplastics: A Comprehensive Review of Methods and Applications",
+          "authors": "Manmeet Kour, Rajeev Kumar, Savita Chaudhary",
+          "abstract": "This review examines the progress in starch-based bioplastics, highlighting their biodegradability and potential to replace traditional plastics. It discusses enhancement techniques like copolymerization, plasticization, and blending with cellulose, PLA, and PHA to improve mechanical strength, thermal resistance, and barrier properties. The paper also explores their applications in food packaging, medical, and electronics, demonstrating their versatility and environmental benefits.",
+          "publishedDate": "01 June 2024",
+          "doi": "https://doi.org/10.69626/csa.2024.0047",
+          "imageUrl": null
+        },
+        {
+          "title": "Wastewater Treatment Using Microbial Fuel Cells",
+          "authors": "Gurleen Kaur, Anu Devi, Raman Kumar, Nivedita Agnihotri",
+          "abstract": "The review explores the potential of microbial fuel cells (MFCs) in wastewater treatment, highlighting their ability to generate bioelectricity while treating wastewater sustainably. It discusses advancements in MFC technology, including structural modifications and novel materials, and emphasizes the need for further research to overcome challenges in scaling up for industrial applications.",
+          "publishedDate": "01 June 2024",
+          "doi": "https://doi.org/10.69626/csa.2024.0067",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/07/image-9.png"
+        },
+        {
+          "title": "Unlocking the Power of Solar Synergy: Enhanced Nitrophenol Degradation using ADGCAAQ Photocatalyst",
+          "authors": "Shikha Anand, Rajesh K. Yadav, Aditya Nath Yadav, Satyam Singh, Rehana Shahin, Jin-OoK Baeg, Kamini Singh, Maneesha Pandey, Suman Yadav, D. K. Dwivedi",
+          "abstract": "This research presents the ADGCAAQ photocatalyst, developed from aloe vera-derived graphene and 1, 4-diamino anthraquinone, demonstrating its effectiveness in degrading 4-nitrophenol under solar light. The study details the photocatalyst’s synthesis through a condensation method and its impressive properties, such as slow charge carrier recombination and high molar absorption. The ADGCAAQ photocatalyst shows significant degradation efficiency with H2O2, highlighting its potential in environmental pollution mitigation.",
+          "publishedDate": "01 June 2024",
+          "doi": "https://doi.org/10.69626/csa.2024.0077",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/07/image-10.png"
+        },
+        {
+          "title": "Biodegradation of Malachite Green Dye by Novel Isolated Bacillus Species AAV from Garden Soil",
+          "authors": "Akshi E Morris, Advait Patil, Shraddha Sadekar, Ankita Choudhury, Mahadevi Munde, Ashok D Chougale, Mayur Kurade, Byong-Hun Jeon , Rahul Tanpure, Sachin Agawane, Vishal Dawkar",
+          "abstract": "This research identifies a novel Bacillus species AAV from garden soil, capable of completely decolorizing malachite green dye within an hour under shaking conditions. The study shows enhanced activity of lignin peroxidase, laccase, and tyrosinase enzymes during the decolorization process. Bacillus sp. AAV efficiently degrades MG dye at alkaline pH and 40°C, proposing its use in treating various textile dyes and effluents without phytotoxic effects.",
+          "publishedDate": "01 June 2024",
+          "doi": "https://doi.org/10.69626/csa.2024.0088",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/07/image-11.png"
+        },
+        {
+          "title": "Synthesis and Antibacterial Properties of Silver Nanoparticles Derived from Cardiospermum halicacabum Leaves",
+          "authors": "S. Stephen Rajkumar Inbanathan, Poornima Jeyasekaran, S. Irfana Parveen, S. Shri Tharani Priya, K. Sneka",
+          "abstract": "The study investigates silver nanoparticles synthesized using Cardiospermum halicacabum leaf extract. Characterization techniques confirmed the successful formation of nanoparticles. Initial antimicrobial tests against E. coli and S. aureus showed limited efficacy, suggesting the need for optimization. The research underscores the potential of these green-synthesized nanoparticles in various applications.",
+          "publishedDate": "01 June 2024",
+          "doi": "https://doi.org/10.69626/csa.2024.0096",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/07/image-12.png"
+        },
+        {
+          "title": "Voltammetric Detection of Diazinon Insecticide at Ferrocene-Graphene/Nafion Modified Glassy Carbon Electrode",
+          "authors": "Gamze Erdoğdu",
+          "abstract": "The study developed a ferrocene/graphene-modified glassy carbon electrode for efficient diazinon detection. Using cyclic voltammetry (CV) and differential pulse voltammetry (DPV), the electrode demonstrated high sensitivity, stability, and a broad detection range. The modification significantly improved electron transfer and catalytic activity, showcasing potential applications in environmental monitoring and contaminant detection.",
+          "publishedDate": "01 June 2024",
+          "doi": "https://doi.org/10.69626/csa.2024.0104",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/07/image-13.png"
+        }
+      ]
+    },
+    {
+      "volumeName": "Volume 1, Issue 1",
+      "researchArticles": [
+        {
+          "title": "Welcome to the ChemSci Advances",
+          "authors": "Rahul Patil, Ashok Chougale",
+          "abstract": "",
+          "publishedDate": "20 March 2024",
+          "doi": "https://doi.org/10.69626/csa.2024.0001",
+          "imageUrl": null
+        },
+        {
+          "title": "Efficient Dye Removal Strategies: Exploring the Role of Biochar",
+          "authors": "Rupali Chavan, Rahul Patil, and Ashok Chougale",
+          "abstract": "The rise in industrial activities has led to increased synthetic dye pollution, posing threats to ecosystems and human health. This review highlights biochar as a promising adsorbent for dye removal due to its extensive surface area, porosity, and surface functional groups. Production methods and surface modifications enhance biochar’s adsorption capacity and efficiency, making it a sustainable solution for wastewater treatment.",
+          "publishedDate": "20 March 2024",
+          "doi": "https://doi.org/10.69626/csa.2024.0003",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/05/efficientdye.png"
+        },
+        {
+          "title": "Ni-Doped LaFeO₃ Microspheres Composed of Nanoparticles for the Photocatalytic Degradation of Organic Dye",
+          "authors": "Sameena R. Mulani, Santosh Bimli, Rajendra Bunkar, Manopriya Samatham, Ekta Choudhary, Ajay Patil, Suman Yadav, Ankit Yadav, Harshada Jadhav, Aayushi Miglani",
+          "abstract": "Ni-doped LaFeO3 microspheres, synthesized via a hydrothermal route, exhibit excellent photocatalytic efficiency in degrading Rhodamine B dye. Characterization confirms structural, morphological, and optical properties. The LFNO-0.2 catalyst achieved 89.44% degradation efficiency, demonstrating superior performance, cyclic stability, and potential for wastewater remediation.",
+          "publishedDate": "20 March 2024",
+          "doi": "https://doi.org/10.69626/csa.2024.0014",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/05/nidopedlafe.png"
+        },
+        {
+          "title": "Fabrication of Superhydrophobic Coating by Spraying PDMS-SiO₂ Suspension for Self-Cleaning Application",
+          "authors": "Sagar S. Ingole, Akshay R. Jundle, Pradip P. Gaikwad, Rutuja A. Ekunde, Rajaram S. Sutar, Sanjay S. Latthe",
+          "abstract": "In this work, a self-cleaning superhydrophobic coating on glass using a sol-gel spray method was developed. Synthesized SiO2 particles and PDMS created a rough surface with excellent superhydrophobic properties (WCA 154°, SA 4°). The coating demonstrated strong mechanical resistance to adhesive tape peeling, sandpaper abrasion, and pencil hardness, making it promising for large-scale self-cleaning applications.",
+          "publishedDate": "20 March 2024",
+          "doi": "https://doi.org/10.69626/csa.2024.0021",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/05/fabrication.png"
+        },
+        {
+          "title": "Electrodeposited Tungsten Trioxide (WO₃) Thin Films for Electrochromic Applications",
+          "authors": "P. S. Chavan, P.S. Shedge, S.S. Deshmukh, R. R. Bhandalkar, S.H. Sutar, S. H. Mujawar",
+          "abstract": "The increasing need for smart, energy-saving technologies in urbanization is addressed by electrochromic supercapacitors, which combine energy storage with visual color changes for applications like smart windows and displays. Nanoporous WO3 thin films, prepared via cathodic electrodeposition, demonstrated high coloration efficiency (52.61 cm²/C) and fast switching kinetics, making them promising candidates for multifunctional electrochromic supercapacitors.",
+          "publishedDate": "20 March 2024",
+          "doi": "https://doi.org/10.69626/csa.2024.0028",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/05/electrodeposited.jpg"
+        },
+        {
+          "title": "MOF Derived CoFe₂O₄@Carbon Nanofibers for Supercapacitor Application",
+          "authors": "T.P. Kamble, S.R. Shingte, V.D. Chavan, Deok-Kee Kim, A.D. Chougale, T.D. Dongale, P.B. Patil",
+          "abstract": "This study details the synthesis and electrochemical evaluation of MOF-derived CoFe2O4 nanoparticles anchored on carbon nanofibers (CoFe2O4@CNFs) for supercapacitors. The CoFe2O4@CNFs exhibited a specific capacitance of 527 F/g, a power density of 234.93 W/kg, and an energy density of 16.58 Wh/kg. These findings underscore the potential of CoFe2O4@CNFs for high-performance energy storage applications.",
+          "publishedDate": "20 March 2024",
+          "doi": "https://doi.org/10.69626/csa.2024.0034",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/05/mofderived.png"
+        },
+        {
+          "title": "Fabrication and Characterization of High-Capacity Manganese Oxide Based Supercapacitor Electrode",
+          "authors": "Nazish Parveen, Sajid Ali Ansari",
+          "abstract": "The research presents a hydrothermal synthesis of OS-MO, achieving a specific capacitance of 629.62 F/g and 89% retention over 1,000 cycles, showcasing its potential for high-performance energy storage applications due to its porous nature and high surface area.",
+          "publishedDate": "20 March 2024",
+          "doi": "https://doi.org/10.69626/csa.2024.0041",
+          "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/07/image-8.png"
+        }
+      ]
+    }
+  ]
         }
       ]
     }
