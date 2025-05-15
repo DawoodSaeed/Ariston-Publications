@@ -6,7 +6,6 @@ import RecentArticles from "@/components/RecentArticles/RecentArticles";
 import ArticleCard from "@/components/ArticleCard/ArticleCard";
 // import Footer from "@/components/Footer";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 
 interface ResearchArticle {
   title: string;
@@ -31,7 +30,6 @@ interface Journal {
 }
 
 const JournalPage = () => {
-  const { journalName } = useParams<{ journalName: string }>();
   // const breadcrumbItems = [
   //   { name: "Journals", href: "/journals" },
   //   { name: "CompSci & AI Advances", href: "/journals/compsci-ai-advances" },
@@ -42,7 +40,6 @@ const JournalPage = () => {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    alert(journalName);
     const fetchJournalData = async () => {
       try {
         const response = await fetch("/mock_data/journalPage.json");
@@ -50,17 +47,7 @@ const JournalPage = () => {
           throw new Error("Failed to fetch journal data");
         }
         const data = await response.json();
-        // Find the journal that matches the URL parameter
-        const foundJournal = data.journalPage.find(
-          (j: Journal) =>
-            j.title.toLowerCase().replace(/\s+/g, "-") === journalName
-        );
-
-        if (!foundJournal) {
-          throw new Error("Journal not found");
-        }
-
-        setJournal(foundJournal);
+        setJournal(data.journalPage[0]); // Get the first journal
         setLoading(false);
       } catch (err) {
         setError(err instanceof Error ? err.message : "An error occurred");
@@ -68,10 +55,8 @@ const JournalPage = () => {
       }
     };
 
-    if (journalName) {
-      fetchJournalData();
-    }
-  }, [journalName]);
+    fetchJournalData();
+  }, []);
 
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error}</div>;

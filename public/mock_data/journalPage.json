@@ -4,7 +4,7 @@
       "title": "CompSci & AI Advances",
       "subtitle": "A Multidisciplinary Computer & AI Journal",
       "description": "CompSci & AI Advances is a leading multidisciplinary peer-reviewed international journal focused on publishing high-quality research and developments in the fields of computer science and artificial intelligence. The journal provides a platform for academics, researchers, and professionals to explore and share innovative ideas, groundbreaking studies, and practical applications that drive the evolution of computing and AI technologies. CompSci & AI Advances has a wide-ranging scope that includes artificial intelligence (AI), computing systems, data science, human-computer interaction, robotics, automation, Machine Learning, Deep Learning, Neural Networks, Natural Language Processing (NLP), Computer Vision, Autonomous Systems, Edge Computing, AI Ethics, Supervised Learning, Unsupervised Learning, Reinforcement Learning, Big Data Analytics, Robotics, AI-Powered Automation, Data Mining, Generative AI, Artificial General Intelligence (AGI), Human-Computer Interaction (HCI), AI in Healthcare, Cognitive Computing, Explainable AI (XAI), AI-enhanced Software Development, Quantum Computing, Edge Computing, Cloud Computing, 5G Technology, High-Performance Computing (HPC), Parallel Computing, Blockchain Technology, Neuromorphic Computing, Cybersecurity, Internet of Things (IoT), Wearable Computing, Ubiquitous Computing, Green Computing, Solid-State Drives (SSD), Virtualization, Serverless Computing, Distributed Computing, Cryptography, Microprocessors, GPU Acceleration, Data Centers, Energy-Efficient Computing, Optical Computing, Embedded Systems, 3D Integration, Computer Architecture, Augmented Reality (AR), Virtual Reality (VR), cybersecurity, and so on. The journal is committed to advancing knowledge across all disciplines of computers and Artificial intelligence. We emphasize interdisciplinary approaches and contributions that address both theoretical foundations and real-world challenges, while also considering the ethical and societal implications of technological progress. The mission of CompSci & AI Advances is to foster a global exchange of ideas and to bridge the gap between academic research and industry practice, promoting responsible and impactful advancements in AI and computing for the betterment of society.",
-      "imagePath": "/images/journals/cs.jpg",
+      "imagePath": "https://aristonpubs.com/wp-content/uploads/2024/05/WhatsApp-Image-2024-05-16-at-6.57.38-AM.jpeg",
       "volumes": [
         {
           "volumeName": "Volume 2, Issue 1 (March 2025)",
@@ -28,7 +28,7 @@
           ]
         },
         {
-          "volumeName": "Volume 1, Issue 2 (December 2024)",
+          "volumeName": "Volume 1, Issue 4 (December 2024)",
           "researchArticles": [
             {
               "title": "Cost Effective IoT Based Smart Home Automation System: Design, Implementation, and Security Features",
@@ -41,9 +41,72 @@
             {
               "title": "Transforming Healthcare with Deep Learning: A Revolutionary Approach to Health Information System",
               "authors": "Saravanan Kandaneri Ramamoorthy, Praveenkumar Babu, S.Sakena Benazer",
-              "abstract": "This paper introduces HealthAI, a revolutionary deep learning-based framework for healthcare systems. By integrating advanced AI techniques, HealthAI analyzes diverse data sources, including EHRs, medical imaging, wearable devices, and genetic information. It provides actionable insights for predictive analytics, personalized treatment plans, and real-time clinical decision-making. Early trials demonstrate its potential to reduce diagnostic errors, improve patient outcomes, and streamline operations. The study details HealthAI’s architecture, implementation, and applications, positioning it as a transformative advancement in modern healthcare.",
+              "abstract": "This paper introduces HealthAI, a revolutionary deep learning-based framework for healthcare systems. By integrating advanced AI techniques, HealthAI analyzes diverse data sources, including EHRs, medical imaging, wearable devices, and genetic information. It provides actionable insights for predictive analytics, personalized treatment plans, and real-time clinical decision-making. Early trials demonstrate its potential to reduce diagnostic errors, improve patient outcomes, and streamline operations. The study details HealthAI's architecture, implementation, and applications, positioning it as a transformative advancement in modern healthcare.",
               "publishedDate": "07 August 2024",
               "doi": "https://doi.org/10.69626/cai.2024.0168",
+              "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/12/image-29.png"
+            }
+          ]
+        },
+        {
+          "volumeName": "Volume 1, Issue 3 (September 2024)",
+          "researchArticles": [
+            {
+              "title": "Advanced Machine Learning Techniques for Cybersecurity Threat Detection",
+              "authors": "R. Sharma, A. Gupta, P. Kumar, S. Patel",
+              "abstract": "This research presents a novel machine learning framework for real-time cybersecurity threat detection. The system employs deep learning algorithms to analyze network traffic patterns and identify potential security breaches. Results show a 92% accuracy in threat detection with a false positive rate of only 3%. The framework successfully detects both known and zero-day attacks, making it a valuable tool for modern cybersecurity operations.",
+              "publishedDate": "15 June 2024",
+              "doi": "https://doi.org/10.69626/cai.2024.0145",
+              "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/12/image-15.png"
+            },
+            {
+              "title": "Quantum Computing Applications in Financial Modeling",
+              "authors": "L. Chen, M. Thompson, J. Wilson, K. Zhang",
+              "abstract": "This study explores the application of quantum computing algorithms in financial modeling and risk assessment. The research demonstrates how quantum computing can significantly reduce computation time for complex financial simulations while maintaining accuracy. The proposed quantum-classical hybrid approach shows promising results in portfolio optimization and risk analysis.",
+              "publishedDate": "22 June 2024",
+              "doi": "https://doi.org/10.69626/cai.2024.0146",
+              "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/12/image-29.png"
+            }
+          ]
+        },
+        {
+          "volumeName": "Volume 1, Issue 2 (June 2024)",
+          "researchArticles": [
+            {
+              "title": "Natural Language Processing for Automated Document Analysis",
+              "authors": "S. Kumar, R. Singh, A. Patel",
+              "abstract": "This paper presents a comprehensive study on the application of advanced NLP techniques for automated document analysis. The research introduces a novel approach to document classification and information extraction, achieving 89% accuracy in complex document processing tasks. The system demonstrates significant improvements in processing speed and accuracy compared to traditional methods.",
+              "publishedDate": "10 March 2024",
+              "doi": "https://doi.org/10.69626/cai.2024.0123",
+              "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/12/image-15.png"
+            },
+            {
+              "title": "Edge Computing Solutions for IoT Applications",
+              "authors": "M. Johnson, P. Williams, L. Brown",
+              "abstract": "This research explores innovative edge computing solutions for IoT applications, focusing on reducing latency and improving data processing efficiency. The study presents a novel architecture that reduces response time by 45% while maintaining data security and reliability. The framework shows particular promise in industrial IoT applications.",
+              "publishedDate": "25 March 2024",
+              "doi": "https://doi.org/10.69626/cai.2024.0124",
+              "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/12/image-29.png"
+            }
+          ]
+        },
+        {
+          "volumeName": "Volume 1, Issue 1 (March 2024)",
+          "researchArticles": [
+            {
+              "title": "Deep Learning Approaches for Computer Vision",
+              "authors": "A. Smith, B. Johnson, C. Davis",
+              "abstract": "This paper presents a comprehensive study of deep learning approaches in computer vision applications. The research introduces novel neural network architectures that achieve state-of-the-art performance in object detection and image classification tasks. The proposed methods show significant improvements in accuracy and processing speed.",
+              "publishedDate": "15 January 2024",
+              "doi": "https://doi.org/10.69626/cai.2024.0101",
+              "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/12/image-15.png"
+            },
+            {
+              "title": "Blockchain Technology in Supply Chain Management",
+              "authors": "R. Kumar, S. Patel, T. Gupta",
+              "abstract": "This study examines the implementation of blockchain technology in supply chain management systems. The research demonstrates how blockchain can enhance transparency, traceability, and efficiency in supply chain operations. The proposed framework shows promising results in reducing operational costs and improving supply chain visibility.",
+              "publishedDate": "30 January 2024",
+              "doi": "https://doi.org/10.69626/cai.2024.0102",
               "imageUrl": "https://aristonpubs.com/wp-content/uploads/2024/12/image-29.png"
             }
           ]
