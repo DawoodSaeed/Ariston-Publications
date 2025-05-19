@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 interface HeroSectionProps {
   title: string;
@@ -19,6 +21,16 @@ export default function HeroSection({
   imageSrc,
   exploreBtnTitle,
 }: HeroSectionProps) {
+  const [hoveredJournal, setHoveredJournal] = useState<string | null>(null);
+
+  const handleMouseEnter = (journalTitle: string) => {
+    setHoveredJournal(journalTitle);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredJournal(null);
+  };
+
   return (
     <section className="relative pt-20 md:pt-24 min-h-[500px] flex items-center bg-[#F8F8F8]">
       <div className="container mx-auto px-4 md:px-8 lg:px-16 relative z-10 flex flex-col md:flex-row items-center justify-center">
@@ -43,15 +55,81 @@ export default function HeroSection({
             </Button>
           </div>
         </div>
-        <div className="w-full md:w-1/2">
-          <div>
-            <img
-              src={imageSrc}
-              className="w-full md:w-auto md:ml-auto"
-              alt="Hero"
-              style={{ height: "520px", width: "465px" }}
-            />
-          </div>
+        <div className="w-full md:w-1/2 relative">
+          <img
+            src={imageSrc}
+            className="w-full md:w-auto md:ml-auto"
+            alt="Hero"
+            style={{ height: "520px", width: "465px", objectFit: "contain" }}
+          />
+          <Link
+            to={"/journal/MatSci Express"}
+            className="absolute"
+            style={{
+              top: "80px",
+              right: "10px",
+              width: "200px",
+              height: "220px",
+              zIndex: 20,
+            }}
+            onMouseEnter={() => handleMouseEnter("MatSci Express")}
+            onMouseLeave={handleMouseLeave}
+            aria-label="Explore MatSci Express Journal"
+          >
+            {hoveredJournal === "MatSci Express" && (
+              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white text-xs px-2 py-1 rounded-full whitespace-nowrap flex items-center space-x-1 opacity-0 animate-fadeIn">
+                Explore MatSci Express
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-3 w-3"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </div>
+            )}
+          </Link>
+          <Link
+            to={"/journal/CompSci & AI Advances"}
+            className="absolute"
+            style={{
+              top: "180px",
+              left: "180px",
+              width: "200px",
+              height: "260px",
+              zIndex: 20,
+            }}
+            onMouseEnter={() => handleMouseEnter("CompSci & AI Advances")}
+            onMouseLeave={handleMouseLeave}
+            aria-label="Explore CompSci & AI Advances Journal"
+          >
+            {hoveredJournal === "CompSci & AI Advances" && (
+              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white text-xs px-2 py-1 rounded-full whitespace-nowrap flex items-center space-x-1 opacity-0 animate-fadeIn">
+                Explore CompSci & AI Advances
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-3 w-3"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </div>
+            )}
+          </Link>
         </div>
       </div>
       <img

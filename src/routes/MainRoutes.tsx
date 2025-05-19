@@ -15,6 +15,7 @@ import UserDashboard from "@/pages/user/Dashboard";
 import Login from "@/pages/Login";
 import RegisterUser from "@/pages/RegisterUser";
 import JournalPage from "@/pages/JournalPage/JournalPage";
+import ArticleDetailPage from "@/pages/JournalPage/ArticleDetailPage";
 
 interface ProtectedRouteProps {
   allowedRole: string;
@@ -46,6 +47,10 @@ const MainRoutes = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<RegisterUser />} />
         <Route path="/journal/:journalName" element={<JournalPage />} />
+        <Route
+          path="/journal/:journalName/:articleId"
+          element={<ArticleDetailPage />}
+        />
       </Route>
 
       {/* Protected Admin routes */}

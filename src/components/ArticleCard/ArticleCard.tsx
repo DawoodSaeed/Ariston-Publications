@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import { CopyIcon, BookmarkIcon, Share2Icon, DownloadIcon } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 interface ArticleCardProps {
   title: string;
@@ -8,11 +9,25 @@ interface ArticleCardProps {
   publishedDate: string;
   doi: string;
   imageUrl?: string;
-  journal?: string;
+  journalTitle: string;
   volume?: string;
   pages?: string;
   year?: string;
+  articleId: string;
+  articleType: string;
 }
+
+// Helper function to create a slug from a string
+const slugify = (text: string) => {
+  return text
+    .toString()
+    .toLowerCase()
+    .replace(/\s+/g, "-") // Replace spaces with -
+    .replace(/[^\w-]+/g, "") // Remove all non-word chars
+    .replace(/--+/g, "-") // Replace multiple - with single -
+    .replace(/^-+/, "") // Trim - from start of text
+    .replace(/-+$/, ""); // Trim - from end of text
+};
 
 const ArticleCard: React.FC<ArticleCardProps> = ({
   title,
@@ -21,15 +36,18 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
   publishedDate,
   doi,
   imageUrl,
-  journal = "CompSci & AI Advances",
+  journalTitle,
   volume = "1(4)",
   pages = "168-177",
   year = "2024",
+  articleId,
+  articleType,
 }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [showFullAbstract, setShowFullAbstract] = useState(false);
   const [copied, setCopied] = useState(false);
   const doiRef = useRef<HTMLDivElement>(null);
+  const navigate = useNavigate();
 
   const handleCopyDOI = () => {
     if (doiRef.current) {
@@ -46,32 +64,18 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
     }
   };
 
+  const handleClick = () => {
+    const journalSlug = slugify(journalTitle);
+    const articleSlug = slugify(articleId);
+    navigate(`/journal/${journalSlug}/${articleSlug}`);
+  };
+
   return (
-    <div className="bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200 p-6 mb-6 flex flex-col md:flex-row gap-6">
-      {imageUrl && (
-        <div className="md:w-1/4 flex-shrink-0 flex items-start">
-          <div className="relative w-full h-48 rounded-lg border border-gray-200 bg-gray-100 flex items-center justify-center">
-            {!imageLoaded && (
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-400"></div>
-              </div>
-            )}
-            <img
-              src={imageUrl}
-              alt={title}
-              className={`w-full h-full object-cover rounded-lg ${
-                imageLoaded ? "opacity-100" : "opacity-0"
-              }`}
-              loading="lazy"
-              onLoad={() => setImageLoaded(true)}
-              onError={(e) => {
-                (e.target as HTMLImageElement).style.display = "none";
-                setImageLoaded(true); // Hide spinner if error
-              }}
-            />
-          </div>
-        </div>
-      )}
+    <div
+      className="bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200 p-6 mb-6 flex flex-col gap-6 cursor-pointer"
+      onClick={handleClick}
+    >
+      {/* Top Section */}
       <div className="flex-1 flex flex-col">
         <div className="mb-4">
           <h3 className="font-bold text-2xl text-gray-900 mb-2 leading-tight hover:text-blue-600 transition-colors duration-150">
@@ -90,7 +94,10 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
             {abstract.length > 150 && (
               <button
                 className="text-blue-600 text-sm font-medium mt-1 hover:text-blue-800 transition-colors duration-150"
-                onClick={() => setShowFullAbstract(!showFullAbstract)}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setShowFullAbstract(!showFullAbstract);
+                }}
               >
                 {showFullAbstract ? "Show less" : "Read more"}
               </button>
@@ -98,22 +105,24 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
           </div>
         </div>
 
+        {/* Metadata */}
         <div className="mt-auto">
           <div className="flex flex-wrap items-center gap-2 text-sm text-gray-500 mb-2">
             <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded-md text-xs font-medium">
-              Research Article
+              {articleType}
             </span>
             <span>Published: {publishedDate}</span>
           </div>
 
           <div className="text-sm text-gray-600 mb-2">
-            {journal} {volume}, {pages} ({year})
+            {journalTitle} {volume}, {pages} ({year})
           </div>
 
+          {/* DOI + Actions */}
           <div className="flex items-center flex-wrap gap-2">
             <div className="flex items-center bg-gray-50 rounded-md px-2 py-1">
               <a
-                href={`https://doi.org/${doi}`}
+                href={`${doi}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 text-sm font-medium hover:underline flex items-center"
@@ -132,10 +141,13 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
                     d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
                   />
                 </svg>
-                <span ref={doiRef}>doi.org/{doi}</span>
+                <span ref={doiRef}>{doi}</span>
               </a>
               <button
-                onClick={handleCopyDOI}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleCopyDOI();
+                }}
                 className="ml-2 text-gray-500 hover:text-gray-700 transition-colors duration-150"
                 aria-label="Copy DOI"
               >
@@ -169,6 +181,32 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
           </div>
         </div>
       </div>
+
+      {/* Image at the Bottom */}
+      {imageUrl && (
+        <div className="w-full mt-4">
+          <div className="relative w-full overflow-hidden">
+            {!imageLoaded && (
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-400"></div>
+              </div>
+            )}
+            <img
+              src={imageUrl}
+              alt={title}
+              className={`mx-auto rounded-lg ${
+                imageLoaded ? "opacity-100" : "opacity-0"
+              }`}
+              loading="lazy"
+              onLoad={() => setImageLoaded(true)}
+              onError={(e) => {
+                (e.target as HTMLImageElement).style.display = "none";
+                setImageLoaded(true);
+              }}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

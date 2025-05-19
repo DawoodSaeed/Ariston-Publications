@@ -1,36 +1,76 @@
 import BooksSection from "@/components/home/BooksSection";
 import HeroSection from "@/components/home/HeroSection";
-const journalBooks = [
-  {
-    id: 1,
-    title: "CompSci & AI Advances",
-    author: "Multidisciplinary Journal",
-    image:
-      "https://aristonpubs.com/wp-content/uploads/2024/11/Cover-page-Comp-and-AI-v4.jpg",
-    description:
-      "Explore the cutting-edge world of computer science and artificial intelligence.",
-  },
-  {
-    id: 2,
-    title: "Biomedicine and Biotechnology",
-    author: "Advances in Biomedical Research",
-    image:
-      "https://aristonpubs.com/wp-content/uploads/2024/05/WhatsApp-Image-2024-05-16-at-6.57.38-AM.jpeg",
-    description:
-      "Discover the latest advancements in biomedical research and its applications.",
-  },
-  {
-    id: 3,
-    title: "Chemical Science and Technology",
-    author: "Advances in Chemical Research",
-    image:
-      "https://aristonpubs.com/wp-content/uploads/2024/05/WhatsApp-Image-2024-05-16-at-6.57.38-AM.jpeg",
-    description:
-      "Learn about the latest developments in chemical science and technology.",
-  },
-];
+import { useEffect, useState } from "react";
+
+interface Journal {
+  id: number;
+  title: string;
+  author: string;
+  image: string;
+  description: string;
+}
+
+// for the mocked api response journal.
+interface ResearchArticle {
+  title: string;
+  authors: string;
+  abstract: string;
+  publishedDate: string;
+  doi: string;
+  imageUrl: string | null;
+}
+
+interface Volume {
+  volumeName: string;
+  researchArticles: ResearchArticle[];
+}
+
+interface JournalData {
+  title: string;
+  subtitle: string;
+  description: string;
+  imagePath: string;
+  volumes: Volume[];
+}
 
 const Journals = () => {
+  const [journals, setJournals] = useState<Journal[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchJournals = async () => {
+      try {
+        const response = await fetch("/mock_data/journalPage.json");
+        if (!response.ok) {
+          throw new Error("Failed to fetch journal data");
+        }
+        const data = await response.json();
+        const { journalPages } = data;
+
+        let newJournals: Journal[] = [];
+        newJournals = journalPages.map((journal: JournalData) => {
+          return {
+            ...journal,
+            image: "https://aristonpubs.com/" + journal.imagePath,
+            author: journal.volumes[0].researchArticles[0].authors.slice(0, 20),
+            description: journal.description,
+          };
+        });
+        setJournals(newJournals);
+        setLoading(false);
+      } catch (err) {
+        setError(err instanceof Error ? err.message : "An error occurred");
+        setLoading(false);
+      }
+    };
+
+    fetchJournals();
+  }, []);
+
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error}</div>;
+
   return (
     <div className="min-h-screen">
       <HeroSection
@@ -42,7 +82,7 @@ const Journals = () => {
 
       {/* Journals Section */}
       <BooksSection
-        books={journalBooks}
+        books={journals}
         title="Our Journals"
         sectionBadgeTitle="OUR JOURNALS"
         description="Ariston Publications is a premier publisher of high-impact journals spanning Science, Engineering, Medicine, Computer Science, Artificial Intelligence, Materials Science, Chemical Science, Energy, and Environment. Committed to excellence, we uphold rigorous peer review and open-access dissemination. Explore our distinguished journal portfolio for cutting-edge research."

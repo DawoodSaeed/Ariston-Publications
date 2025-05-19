@@ -6,6 +6,21 @@ import RecentArticles from "@/components/RecentArticles/RecentArticles";
 import ArticleCard from "@/components/ArticleCard/ArticleCard";
 // import Footer from "@/components/Footer";
 import { useEffect, useState } from "react";
+import ArticleDetailPage from "@/pages/JournalPage/ArticleDetailPage";
+import { useParams } from "react-router-dom";
+import LoadingSpinner from "@/components/LoadingSpinner";
+
+interface Author {
+  name: string;
+  affiliations: string[];
+  is_corresponding: boolean;
+}
+
+interface AuthorDetails {
+  authors: Author[];
+  affiliations: { [key: string]: string };
+  corresponding_author: { email: string; name: string } | null;
+}
 
 interface ResearchArticle {
   title: string;
@@ -14,6 +29,19 @@ interface ResearchArticle {
   publishedDate: string;
   doi: string;
   imageUrl: string;
+  url: string;
+  significance?: string;
+  summary?: string;
+  author_details?: AuthorDetails;
+  journal?: string | null;
+  volume?: string;
+  issue?: string;
+  pages?: string;
+  article_type: string;
+  submitted_date?: string;
+  revised_date?: string;
+  accepted_date?: string;
+  citation?: string;
 }
 
 interface Volume {
@@ -38,6 +66,7 @@ const JournalPage = () => {
   const [journal, setJournal] = useState<Journal | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const { journalName } = useParams();
 
   useEffect(() => {
     const fetchJournalData = async () => {
@@ -47,7 +76,15 @@ const JournalPage = () => {
           throw new Error("Failed to fetch journal data");
         }
         const data = await response.json();
-        setJournal(data.journalPage[0]); // Get the first journal
+        const { journalPages } = data;
+        // Find the specific journal based on the title
+        const selectedJournal = journalPages.find(
+          (j: Journal) => j.title.trim() === journalName
+        );
+        if (!selectedJournal) {
+          throw new Error(`Journal with title "${journalName}" not found`);
+        }
+        setJournal(selectedJournal);
         setLoading(false);
       } catch (err) {
         setError(err instanceof Error ? err.message : "An error occurred");
@@ -56,9 +93,9 @@ const JournalPage = () => {
     };
 
     fetchJournalData();
-  }, []);
+  }, [journalName]);
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <LoadingSpinner />;
   if (error) return <div>Error: {error}</div>;
   if (!journal) return <div>No journal data found</div>;
 
@@ -78,32 +115,48 @@ const JournalPage = () => {
           imagePath={journal.imagePath}
         />
         <main className="py-4 sm:py-6">
-          {journal.volumes.map((volume, volumeIndex) => (
-            <div
-              key={volumeIndex}
-              className="bg-white border border-gray-300 rounded-md p-2 sm:p-4 md:p-6 max-w-full mb-8"
-            >
-              <div className="border-b border-gray-300 pb-3 sm:pb-4 mb-4 sm:mb-6">
-                <h2 className="text-lg sm:text-xl font-bold text-journal-blue">
-                  Research Articles
-                </h2>
-                <span className="text-xs sm:text-sm text-gray-600">
-                  {volume.volumeName}
-                </span>
+          {journal.volumes.map((volume, volumeIndex) => {
+            // Group articles by article_type
+            const grouped: { [type: string]: ResearchArticle[] } = {};
+            volume.researchArticles.forEach((article) => {
+              const type = article.article_type?.toUpperCase() || "OTHER";
+              if (!grouped[type]) grouped[type] = [];
+              grouped[type].push(article);
+            });
+            return (
+              <div
+                key={volumeIndex}
+                className="bg-white border border-gray-300 rounded-md p-2 sm:p-4 md:p-6 max-w-full mb-8"
+              >
+                <div className="border-b border-gray-300 pb-3 sm:pb-4 mb-4 sm:mb-6">
+                  <h2 className="text-lg sm:text-xl font-bold text-journal-blue">
+                    {volume.volumeName}
+                  </h2>
+                </div>
+                {Object.entries(grouped).map(([type, articles]) => (
+                  <div key={type} className="mb-6">
+                    <h3 className="text-journal-blue font-bold text-base sm:text-lg uppercase tracking-wide mb-3 pl-2 border-l-4 border-[#4F5087] bg-[#F6F8FA] py-1">
+                      {type}
+                    </h3>
+                    {articles.map((article, index) => (
+                      <ArticleCard
+                        key={index}
+                        title={article.title}
+                        authors={article.authors}
+                        abstract={article.abstract}
+                        publishedDate={article.publishedDate}
+                        doi={article.doi}
+                        imageUrl={article.imageUrl}
+                        articleId={article.title}
+                        journalTitle={journal.title}
+                        articleType={article.article_type}
+                      />
+                    ))}
+                  </div>
+                ))}
               </div>
-              {volume.researchArticles.map((article, index) => (
-                <ArticleCard
-                  key={index}
-                  title={article.title}
-                  authors={article.authors}
-                  abstract={article.abstract}
-                  publishedDate={article.publishedDate}
-                  doi={article.doi}
-                  imageUrl={article.imageUrl}
-                />
-              ))}
-            </div>
-          ))}
+            );
+          })}
         </main>
       </div>
 
@@ -112,21 +165,27 @@ const JournalPage = () => {
         <div className="flex flex-col gap-1 mb-3">
           <a
             href="#"
-            className="block w-full bg-[#4F5087] text-white font-bold text-xs sm:text-sm text-center py-2 sm:py-3 rounded-none"
+            className="group relative block w-full bg-[#4F5087] text-white font-bold text-xs sm:text-sm text-center py-2 sm:py-3 rounded-none overflow-hidden transition-all duration-300 hover:bg-[#3A3B6B] hover:shadow-lg"
           >
-            SUBMIT MANUSCRIPT
+            <span className="relative z-10">SUBMIT MANUSCRIPT</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+            <div className="absolute bottom-0 left-0 w-full h-0.5 bg-white/30 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
           </a>
           <a
             href="#"
-            className="block w-full bg-[#4F5087] text-white font-bold text-xs sm:text-sm text-center py-2 sm:py-3 rounded-none"
+            className="group relative block w-full bg-[#4F5087] text-white font-bold text-xs sm:text-sm text-center py-2 sm:py-3 rounded-none overflow-hidden transition-all duration-300 hover:bg-[#3A3B6B] hover:shadow-lg"
           >
-            BE A REVIEWER
+            <span className="relative z-10">BE A REVIEWER</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+            <div className="absolute bottom-0 left-0 w-full h-0.5 bg-white/30 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
           </a>
           <a
             href="#"
-            className="block w-full bg-[#4F5087] text-white font-bold text-xs sm:text-sm text-center py-2 sm:py-3 rounded-none"
+            className="group relative block w-full bg-[#4F5087] text-white font-bold text-xs sm:text-sm text-center py-2 sm:py-3 rounded-none overflow-hidden transition-all duration-300 hover:bg-[#3A3B6B] hover:shadow-lg"
           >
-            JOIN EDITORIAL BOARD
+            <span className="relative z-10">JOIN EDITORIAL BOARD</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+            <div className="absolute bottom-0 left-0 w-full h-0.5 bg-white/30 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
           </a>
         </div>
         <RecentArticles />
